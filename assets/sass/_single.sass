@@ -1,0 +1,123 @@
+
+
+
+
+
+.vca-image
+	user-select: none
+	img
+		cursor: zoom-in
+
+	.image-meta
+		padding: $tiny $halfling
+		font-size: 0.875em
+		font-weight: 300
+
+		background-color: $black
+		line-height: 1
+
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+		cursor: pointer
+
+		transition: background-color 300ms ease-out
+
+		&:hover
+			background-color: lighten( $black, 5 )
+
+	.icon
+		transition: transform 300ms ease-in-out
+		display: block
+
+	.image-id
+		font-weight: 700
+		font-size: 1.125em
+		float: left
+		flex: 1
+
+
+	.image-state
+		$icon_size: 2em
+		position: relative
+		font-size: $icon_size
+		text-align: right
+
+		float: right
+
+		flex: 1
+
+
+	// Default state is "unselected", hide "selected"
+	.when-favorite-selected
+		display: none
+
+	.is-selected
+		.icon
+			color: $accent
+		.when-favorite-selected
+			display: block
+		.when-favorite-unselected
+			display: none
+
+	.image-state__icon
+		float: right
+
+	.image-state__actions
+		float: right
+		text-transform: uppercase
+		margin-right: $tiny
+		opacity: 0
+		transition: opacity 100ms ease-in
+		font-size: 0.75rem
+		line-height: 2rem
+		color: $gray
+
+	.image-meta:hover .image-state__actions
+		opacity: 1
+
+
+
+
+.vca-preview
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 5000
+
+	width: 220px
+	border: 5px solid $white
+	border-radius: 3px
+
+	display: none
+
+	img
+		display: block
+
+
+
+.vca-preview-link
+	background-color: $white
+	color: $black
+	padding: .5em
+	font-size: .75em
+	border-radius: 3px
+	margin-left: .5em
+	margin-right: .5em
+	cursor: pointer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

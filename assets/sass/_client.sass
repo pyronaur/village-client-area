@@ -1,0 +1,49 @@
+
+// Prevent scrollbar body jiggle
+.page-template-client-area
+	overflow-y: scroll
+
+.entry-masonry__meta
+	padding: $halfling
+	display: block
+	text-align: center
+
+
+	.date, .title
+		display: block
+
+	.date
+		font-weight: normal
+		font-size: 0.875rem
+
+
+.client-area .entry-masonry a:hover
+	color: inherit
+
+
+
+.entry-client-area
+	padding: $masonry_gutter_size
+
+.client-area__filters
+	margin-bottom: $padding
+	text-align: center
+
+	display: none
+	.js &
+		display: block
+		
+
+.client-area-filter
+	width: 50%
+	max-width: 600px
+
+	font-size: 2.4rem
+	font-weight: 400
+
+	border-width: 0
+	border-bottom-width: 2px
+
+	&.not-found
+		border-color: #d42418
+
