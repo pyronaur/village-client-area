@@ -77,5 +77,5 @@ $args['share_icons'][] = array(
 
 $parsed_sections = Village_Options::parse_sections( $sections );
 
-Redux::setArgs( VCA::$key, $args );
-Village_Options::set_sections( VCA::$key, $sections );
+Redux::setArgs( VCA_Option::$key, $args );
+Village_Options::set_sections( VCA_Option::$key, $sections );

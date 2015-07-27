@@ -3,7 +3,7 @@
 /**
  * Add comments support for client_gallery
  */
-if ( VCA::get_option( 'enable_comments', true ) ) {
+if ( VCA_Option::get( 'enable_comments', true ) ) {
 	add_action( 'init', 'vca_add_comments_support' );
 	function vca_add_comments_support() {
 		add_post_type_support( 'client_gallery', 'comments' );
@@ -14,7 +14,7 @@ if ( VCA::get_option( 'enable_comments', true ) ) {
 /**
  * Turn image #hashtags into hoverable images
  */
-if ( VCA::get_option( 'enable_smart_tags', true ) ) {
+if ( VCA_Option::get( 'enable_smart_tags', true ) ) {
 	add_filter( 'comment_text', 'vca_image_link_markup' );
 	add_filter( 'the_content', 'vca_image_link_markup' );
 

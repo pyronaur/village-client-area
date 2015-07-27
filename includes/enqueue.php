@@ -30,14 +30,14 @@
  * Enqueue scripts and styles.
  */
 function vca_enqueue_styles_scripts() {
-	$url_base = VCA::conf( 'url' );
+	$url_base = VCA()->plugin_url();
 
 	/*!
 
 	 * Enqueue Styles
 	 *
 	 */
-	wp_enqueue_style( 'client-area-style', $url_base . 'assets/build/client-area.css' );
+	wp_enqueue_style( 'client-area-style', $url_base . '/assets/build/client-area.css' );
 
 
 
@@ -57,13 +57,13 @@ function vca_enqueue_styles_scripts() {
 	 // Enqueue all required libraries
 	foreach ( $libs as $lib_name ) {
 		$handle = 'village-' . $lib_name;
-		$url = $url_base . 'assets/libs/' . $lib_name . '.js';
-		wp_enqueue_script( $handle, $url, array( 'jquery' ), VCA::VERSION, true );
+		$url = $url_base . '/assets/libs/' . $lib_name . '.js';
+		wp_enqueue_script( $handle, $url, array( 'jquery' ), VCA()->version, true );
 	}
 
 
 	// Enqueue Client Area Script
-	wp_enqueue_script( 'village-client-area', $url_base . 'assets/build/client-area.js', array('jquery'), VCA::VERSION, true );
+	wp_enqueue_script( 'village-client-area', $url_base . '/assets/build/client-area.js', array('jquery'), VCA()->version, true );
 
 
 }

@@ -9,5 +9,5 @@ gulp.task "getlibs", ->
 		console.log "Downloading #{key} from URL: #{url}"
 
 		download( url )
-		.pipe( rename( basename: key ) )
-		.pipe( gulp.dest( Config.libs.source ) )
+			.pipe( rename( basename: key ) )
+			.pipe( gulp.dest( Config.libs.source ) )

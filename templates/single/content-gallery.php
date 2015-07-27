@@ -18,8 +18,8 @@ $entry_attr_template = array(
 	'class' => array( 'vca-image', 'entry-masonry' ),
 );
 
-$enable_favorites  = VCA::get_option( 'enable_favorites', true );
-$enable_smart_tags = VCA::get_option( 'enable_smart_tags', true );
+$enable_favorites  = VCA_Option::get( 'enable_favorites', true );
+$enable_smart_tags = VCA_Option::get( 'enable_smart_tags', true );
 
 ?>
 

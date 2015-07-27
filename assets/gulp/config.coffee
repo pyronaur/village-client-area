@@ -23,6 +23,8 @@ GLOBAL.config =
 		source: "./assets/coffee"
 		dest: "./assets/build/client-area.js"
 
+	libs:
+		source: './assets/libs'
 
 	### External Libraries & Their URLs ###
 	external_libs:
