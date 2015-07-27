@@ -1,6 +1,9 @@
 
 # There must be an AJAX URL
-return if not window.ajax_object? or not window.ajax_object.ajax_url?
+if not window.ajax_object? or not window.ajax_object.ajax_url?
+	if console? and console.log?
+		throw new Error "Ajax Object is required for Village Client Area"
+		return
 
 image_state_change = ( $this, is_selected ) ->
 	if is_selected is 0
