@@ -2,18 +2,22 @@
 
 
 
+.entry-client-area
+	@extend %cf
 
 .vca-image
 	user-select: none
+	@extend %cf
+
 	img
 		cursor: zoom-in
 
 	.image-meta
-		padding: $tiny $halfling
+		@extend %cf
+		padding: $halfling
 		font-size: 0.875em
 		font-weight: 300
 
-		background-color: $black
 		line-height: 1
 
 		display: flex
@@ -24,22 +28,19 @@
 
 		transition: background-color 300ms ease-out
 
-		&:hover
-			background-color: lighten( $black, 5 )
+		background-color: $light
 
 	.icon
 		transition: transform 300ms ease-in-out
 		display: block
 
 	.image-id
-		font-weight: 700
-		font-size: 1.125em
 		float: left
 		flex: 1
 
 
 	.image-state
-		$icon_size: 2em
+		$icon_size: 1em
 		position: relative
 		font-size: $icon_size
 		text-align: right
@@ -47,21 +48,21 @@
 		float: right
 
 		flex: 1
-
+		
+		.label
+			font-size: 0.75em
 
 	// Default state is "unselected", hide "selected"
 	.when-favorite-selected
 		display: none
 
 	.is-selected
-		.icon
-			color: $accent
 		.when-favorite-selected
 			display: block
 		.when-favorite-unselected
 			display: none
 
-	.image-state__icon
+	.image-state__status
 		float: right
 
 	.image-state__actions
@@ -78,7 +79,13 @@
 		opacity: 1
 
 
-
+.vca-title
+	text-align: center
+	font-size: 2em
+	margin-bottom: 1.4em
+	margin-top: 1.4em
+	@extend %cf
+	display: block
 
 .vca-preview
 	position: absolute
@@ -87,7 +94,7 @@
 	z-index: 5000
 
 	width: 220px
-	border: 5px solid $white
+	border: 3px solid $light
 	border-radius: 3px
 
 	display: none
@@ -98,8 +105,7 @@
 
 
 .vca-preview-link
-	background-color: $white
-	color: $black
+	background-color: $light
 	padding: .5em
 	font-size: .75em
 	border-radius: 3px
