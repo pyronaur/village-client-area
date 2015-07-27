@@ -90,27 +90,9 @@ $enable_smart_tags = VCA_Option::get( 'enable_smart_tags', true );
 					<div class="image-id">#<?php echo $image['id']; ?></div>
 				<?php endif; ?>
 
-				<?php if ( $enable_favorites ) : ?>
-					<div class="image-state">
-
-						<div class="image-state__icon">
-							<i class="when-favorite-selected icon ion-ios-star"></i>
-							<i class="when-favorite-unselected icon ion-ios-star-outline"></i>
-						</div>
-						<!-- .image-state__icon -->
-
-						<div class="image-state__actions">
-							<span class="when-favorite-selected action">
-								<?php _e( "Unselect", "village" ) ?>
-							</span>
-							<span class="when-favorite-unselected action">
-								<?php _e( "Select", "village" ) ?>
-							</span>
-						</div>
-						<!-- .image-state__actions -->
-
-					</div><!-- .image-state -->
-				<?php endif; ?>
+				<?php if ( $enable_favorites ) {
+					vca_get_template_part('single/image-status');
+				}?>
 
 			</div>
 		<?php endif; ?>
