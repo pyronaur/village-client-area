@@ -4,38 +4,13 @@
 function vca_comments_template() {
 	// If comments are open or we have at least one comment, load up the comment template
 	if ( VCA_Option::get( 'enable_comments', true ) && ( comments_open() || '0' != get_comments_number() ) ) {
-
-		comments_template( 'client-area/comments.php' );
-
-		comments_template( vca_locate_template( 'single/comments' ) );
+		comments_template();
 	}
 }
 
-function vca_filter_comments_template( $path ) {
-
-	# Filter only client-area comments template
-	if ( ! strpos( $path, 'client-area' ) ) {
-		return $path;
-	}
-
-	$comments_location = '/client-area/comments.php';
-
-	if ( ! file_exists( STYLESHEETPATH . $comments_location )
-	     && ! file_exists( TEMPLATEPATH . $comments_location )
-	) {
-		$new_path = VCA()->plugin_path() . "/templates/single/comments.php";
-
-		if ( file_exists($new_path ) ) {
-			return $new_path;
-		}
-	}
-
-	return $path;
-
+function vca_get_page_id( $slug ) {
+	return false;
 }
-
-add_filter( 'comments_template', 'vca_filter_comments_template' );
-
 
 function vca_get_template_part( $slug, $name = null, $load = true ) {
 
@@ -83,4 +58,46 @@ function vca_locate_template( $slug, $name = null ) {
 	}
 
 	return $template;
+}
+
+
+
+
+if ( ! function_exists( 'village_is_password_protected' ) ) {
+
+	function village_is_password_protected() {
+
+		$post = get_post();
+
+		/**
+		 * Don't display password protected galleries in:
+		 *    1. single-portfolio if post_password is required
+		 *    2. If post has a password, doesn't matter whether the password was entered or not, don't display unless is_singular()
+		 */
+		if ( ( is_singular( array(
+					'portfolio',
+					'client_gallery'
+				) ) && post_password_required() ) || ( ! is_singular( array(
+					'portfolio',
+					'client_gallery'
+				) ) && ! empty( $post->post_password ) )
+		) {
+			return true;
+		}
+
+
+		/**
+		 * Don't display if the current portfolio entry in any archive
+		 */
+		if ( ! is_singular( array( 'page', 'portfolio' ) )
+		     && get_post_meta( get_the_ID(), 'remove_from_archive', true ) === "1"
+		) {
+			return true;
+		}
+
+
+		return false;
+
+	}
+
 }

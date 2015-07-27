@@ -74,9 +74,9 @@ $enable_smart_tags = VCA_Option::get( 'enable_smart_tags', true );
 	$entry_attr['id'] = 'vca-image-' . $image['id'];
 
 	?>
-	<div<?php Village::render_attributes( $entry_attr ) ?>>
+	<div<?php Village_Render::attributes( $entry_attr ) ?>>
 		<?php // All $image and $href attributes have been escaped in Village_Gallery_Data with @function wp_prepare_attachment_for_js() ?>
-		<a<?php Village::render_attributes( $image_link_attr ); ?> rel="village-gallery"
+		<a<?php Village_Render::attributes( $image_link_attr ); ?> rel="village-gallery"
 		                                                           href="<?php echo esc_url_raw( $href ); ?>"
 		                                                           title="<?php echo esc_attr( $image['caption'] ); ?>">
 			<img src="<?php echo esc_url_raw( $image['thumb'] ); ?>" alt="<?php echo esc_attr( $image['desc'] ); ?>"/>
@@ -84,7 +84,7 @@ $enable_smart_tags = VCA_Option::get( 'enable_smart_tags', true );
 
 
 		<?php if ( $enable_smart_tags || $enable_favorites ) : ?>
-			<div<?php Village::render_attributes( $entry_meta ); ?>>
+			<div<?php Village_Render::attributes( $entry_meta ); ?>>
 
 				<?php if ( $enable_smart_tags ) : ?>
 					<div class="image-id">#<?php echo $image['id']; ?></div>

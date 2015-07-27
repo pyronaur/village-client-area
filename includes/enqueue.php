@@ -65,6 +65,8 @@ function vca_enqueue_styles_scripts() {
 	// Enqueue Client Area Script
 	wp_enqueue_script( 'village-client-area', $url_base . '/assets/build/client-area.js', array('jquery'), VCA()->version, true );
 
+	// Add "window.ajax_object.ajax_url" to frontend
+	wp_localize_script( 'village-client-area', 'ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
 
 }
 

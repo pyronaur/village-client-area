@@ -11,6 +11,11 @@
 			vca_get_template_part( 'single/content-password-required' );
 			continue;
 		}
+
+		$masonry_data = array(
+			'itemSelector' => '.entry-masonry',
+			'columnWidth' => '.grid-sizer'
+		);
 		?>
 
 		<div id="primary" class="content-area">
@@ -26,7 +31,7 @@
 					}
 					?>
 
-					<div class="masonry js__masonry js__photoswipe">
+					<div class="masonry js__masonry js__photoswipe js-masonry"<?php Village_Render::data('masonry-options', $masonry_data); ?>>
 						<div class="grid-sizer"></div>
 						<?php vca_get_template_part( 'single/content-gallery' ); ?>
 					</div>

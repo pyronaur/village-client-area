@@ -15,7 +15,7 @@ if( function_exists('get_field')  ){
 
 ?>
 
-<div<?php Village::render_attributes( $protected_area ); ?>>
+<div<?php Village_Render::attributes( $protected_area ); ?>>
 
 	<div class="entry-content content-area">
 

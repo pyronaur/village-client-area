@@ -9,7 +9,7 @@
 ?>
 <div class="entry-content__wrap">
 
-	<h1 class="big-title">
+	<h1 class="vca-title big-title">
 		<?php the_title() ?>
 	</h1>
 
