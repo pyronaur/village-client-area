@@ -21,7 +21,6 @@ GLOBAL.config =
 	# **************************
 	coffee:
 		source: "./assets/coffee"
-		dest: "./assets/build/client-area.js"
 
 	libs:
 		source: './assets/libs'
@@ -36,6 +35,7 @@ GLOBAL.config =
 		# Libraries
 		imagesloaded: "https://raw.githubusercontent.com/desandro/imagesloaded/master/imagesloaded.pkgd.js"
 		masonry: "https://raw.githubusercontent.com/desandro/masonry/master/dist/masonry.pkgd.js"
+		velocity: "https://raw.githubusercontent.com/julianshapiro/velocity/master/velocity.js"
 
 
 

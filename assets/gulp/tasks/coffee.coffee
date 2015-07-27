@@ -21,7 +21,7 @@ js_wrapper = """
 	    <%= contents %>
 	}).call(this);
 
-""".replace(/^\s+|\s+$/g,'')
+"""
 
 
 

@@ -52,6 +52,7 @@ function vca_enqueue_styles_scripts() {
 		'masonry',
 		'wp_js_hooks',
 		'jqache',
+		'velocity',
 	) );
 
 	 // Enqueue all required libraries
