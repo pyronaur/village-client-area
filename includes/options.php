@@ -86,7 +86,9 @@ $args['share_icons'][] = array(
 	'icon'  => 'el-icon-facebook'
 );
 
-$parsed_sections = Village_Options::parse_sections( $sections );
+
+$args = apply_filters('ca_redux_args', $args);
+$sections = apply_filters('ca_redux_sections', $sections);
 
 Redux::setArgs( VCA_Option::$key, $args );
 Village_Options::set_sections( VCA_Option::$key, $sections );
