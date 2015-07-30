@@ -8,7 +8,7 @@
 		<?php
 		// Skip this loop iteration if password is required
 		if ( village_is_password_protected() ) {
-			vca_get_template_part( 'single/content-password-required' );
+			vca_get_template_part( 'protected/protected-content' );
 			continue;
 		}
 

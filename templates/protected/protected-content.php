@@ -5,13 +5,15 @@ $protected_area = array(
 	'class' => array('protected-area'),
 
 );
-if( function_exists('get_field')  ){
-	$featured_background = get_field('featured_background_image');
 
-	if( !empty( $featured_background )) {
-		$protected_area['style']['background-image'] = 'url(' . $featured_background['url'] . ')';
-	}
+$featured_image = get_post_meta(get_the_ID(), 'featured_background_image', true);
+$image_url = wp_get_attachment_url( $featured_image );
+
+
+if( !empty( $image_url )) {
+	$protected_area['style']['background-image'] = 'url(' . $image_url . ')';
 }
+
 
 ?>
 

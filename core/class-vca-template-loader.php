@@ -16,6 +16,7 @@ class WC_Template_Loader {
 	public static function init() {
 		add_filter( 'template_include', array( __CLASS__, 'template_loader' ) );
 		add_filter( 'comments_template', array( __CLASS__, 'comments_template_loader' ) );
+		add_filter( 'the_password_form', array( __CLASS__, 'password_form_template_loader' ) );
 	}
 
 	/**
@@ -84,6 +85,16 @@ class WC_Template_Loader {
 			}
 		}
 	}
+
+	public static function password_form_template_loader() {
+
+		ob_start();
+		vca_get_template_part( 'protected/protected-form' );
+		return ob_get_clean();
+
+	}
+
+
 }
 
 WC_Template_Loader::init();
