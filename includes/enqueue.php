@@ -5,8 +5,6 @@
  *
  * @TODO:
  *
- *      * Move Client Area to a Plugin
- *
  *      * Move colors & fonts to theme, keep layout settings
  *
  *      * Create Fallback Styles
@@ -59,7 +57,7 @@ function vca_enqueue_styles_scripts() {
 	foreach ( $libs as $lib_name ) {
 		$handle = 'village-' . $lib_name;
 		$url = $url_base . '/assets/libs/' . $lib_name . '.js';
-		wp_enqueue_script( $handle, $url, array( 'jquery' ), VCA()->version, true );
+		wp_enqueue_script( $handle, $url, array( 'jquery', 'underscore' ), VCA()->version, true );
 	}
 
 
