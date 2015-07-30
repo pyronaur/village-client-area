@@ -14,8 +14,8 @@ if ( VCA_Option::get( 'enable_comments', true ) ) {
 /**
  * Remove "Protected:" from client_gallery posts
  */
-add_filter( 'protected_title_format', 'village_modify_the_title' );
-function village_modify_the_title( $title ) {
+add_filter( 'protected_title_format', 'ca_modify_protected_titles' );
+function ca_modify_protected_titles( $title ) {
 	if ( get_post_type() === 'client_gallery' ) {
 		return '%s';
 	}
