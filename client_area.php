@@ -11,6 +11,40 @@
  * Text Domain:       village
  */
 
+
+
+/**
+ *
+ *
+ * @TODO:
+ *
+ *      * Add image size for Client Gallery!
+ *
+ *      * Avoid Naming collisions for Classes
+ *
+ *      * Sensible naming for classes
+ *
+ *      * Remove junk from classes
+ *
+ *
+ *      * Move colors & fonts to theme, keep layout settings
+ *
+ *      * Create Fallback Styles
+ *
+ *      * Make PLUGIN work with Twenty Fifteen
+ *
+ *      * Add "woocommerce like" body open / close action
+ *
+ *      * Publish to Wordpress.org or Github
+ *
+ * @DONE
+ *       * DO NOT Combine Theme scripts into libs.js
+ *          - Instead wp_enqueue_them as 'village-lib-' . $script_name;
+ *          - Use same handles for masonry, jQache, etc.
+ *
+ */
+
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }

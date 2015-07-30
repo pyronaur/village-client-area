@@ -1,30 +1,6 @@
 <?php
 
 /**
- *
- *
- * @TODO:
- *
- *      * Move colors & fonts to theme, keep layout settings
- *
- *      * Create Fallback Styles
- *
- *      * Make PLUGIN work with Twenty Fifteen
- *
- *      * Add "woocommerce like" body open / close action
- *
- *      * Publish to Wordpress.org or Github
- *
- * @DONE
- *       * DO NOT Combine Theme scripts into libs.js
- *          - Instead wp_enqueue_them as 'village-lib-' . $script_name;
- *          - Use same handles for masonry, jQache, etc.
- *
- */
-
-
-
-/**
  * Enqueue scripts and styles.
  */
 function vca_enqueue_styles_scripts() {
