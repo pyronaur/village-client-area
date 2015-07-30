@@ -48,7 +48,7 @@ if ( VCA_Option::get( 'enable_smart_tags', true ) ) {
 
 		$id = $matches[2];
 
-		return $matches[1] . '<span class="vca-preview-link">#' . $id . '</span>';
+		return $matches[1] . '<span class="ca-preview-link">#' . $id . '</span>';
 
 	}
 }

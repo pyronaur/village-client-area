@@ -71,7 +71,7 @@ $enable_smart_tags = VCA_Option::get( 'enable_smart_tags', true );
 		$entry_meta['class'][] = 'is-selected';
 	}
 
-	$entry_attr['id'] = 'vca-image-' . $image['id'];
+	$entry_attr['id'] = 'ca-image-' . $image['id'];
 
 	?>
 	<div<?php Village_Render::attributes( $entry_attr ) ?>>

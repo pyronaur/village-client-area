@@ -33,7 +33,7 @@ display_error_message = ( $el ) ->
 	if not image_id
 		image_id = 0
 
-	$error = $$('.vca-error__message.js__template')
+	$error = $$('.ca-error__message.js__template')
 		.clone()
 		.removeClass('js__template')
 
@@ -44,7 +44,7 @@ display_error_message = ( $el ) ->
 
 	$error
 		.css('opacity', 0)
-		.appendTo( $$('.vca-error__container') )
+		.appendTo( $$('.ca-error__container') )
 		.velocity
 			properties:
 				translateY: [0, 10]
@@ -67,7 +67,7 @@ display_error_message = ( $el ) ->
 ###
     Attach Events to .image-meta
 ###
-$('.vca-image .image-meta').on 'click', ->
+$('.ca-image .image-meta').on 'click', ->
 
 	$this = $(this)
 	image_id = $this.data('imageId')
