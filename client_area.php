@@ -38,6 +38,7 @@ if( is_admin() ) {
 require_once 'Village_Client_Area.php';
 
 require_once 'core/register_post_type.php';
+require_once 'core/class-village-options.php';
 require_once 'core/class-vca-option.php';
 require_once 'core/class-vca-template-loader.php';
 require_once 'core/class-village-gallery-data.php';
