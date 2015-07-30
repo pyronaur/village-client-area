@@ -67,12 +67,13 @@ if ( ! class_exists( 'Village_Client_Area' ) ) :
 		 */
 		public function includes() {
 
-			require_once 'core/register_post_type.php';
-			require_once 'core/class-village-options.php';
-			require_once 'core/class-vca-option.php';
-			require_once 'core/class-vca-template-loader.php';
-			require_once 'core/class-village-gallery-data.php';
-			require_once 'core/class-village-render.php';
+			require_once 'includes/register_post_type.php';
+
+			require_once 'core/Village_Options.class.php';
+			require_once 'core/VCA_Option.class.php';
+			require_once 'core/VCA_Template_Loader.class.php';
+			require_once 'core/Village_Client_Gallery_Data.class.php';
+			require_once 'core/Village_Render.class.php';
 
 			require_once 'includes/functions.php';
 			require_once 'includes/hooks.php';

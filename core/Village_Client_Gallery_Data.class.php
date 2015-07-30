@@ -4,9 +4,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if ( ! class_exists( 'Village_Gallery_Data' ) ):
+if ( ! class_exists( 'Village_Client_Gallery_Data' ) ):
 
-	class Village_Gallery_Data {
+	class Village_Client_Gallery_Data {
 
 		private $ID;
 		private $has_descriptions;
