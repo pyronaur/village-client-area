@@ -12,6 +12,20 @@ if ( VCA_Option::get( 'enable_comments', true ) ) {
 
 
 /**
+ * Remove "Protected:" from client_gallery posts
+ */
+add_filter( 'protected_title_format', 'village_modify_the_title' );
+function village_modify_the_title( $title ) {
+	if ( get_post_type() === 'client_gallery' ) {
+		return '%s';
+	}
+
+	return $title;
+}
+
+
+
+/**
  * Turn image #hashtags into hoverable images
  */
 if ( VCA_Option::get( 'enable_smart_tags', true ) ) {
