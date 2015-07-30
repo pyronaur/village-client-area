@@ -24,7 +24,7 @@ class WC_Template_Loader {
 	 * Handles template usage so that we can use our own templates instead of the themes.
 	 *
 	 * Templates are in the 'templates' folder. Village Client Area looks for theme
-	 * overrides in /theme/woocommerce/ by default
+	 * overrides in /theme/client-area/ by default
 	 **
 	 * @param mixed $template
 	 * @return string
@@ -39,7 +39,7 @@ class WC_Template_Loader {
 			$find[] = $file;
 			$find[] = VCA()->template_path() . $file;
 
-		} elseif ( is_post_type_archive( 'client_gallery' ) || is_page( vca_get_page_id( 'shop' ) ) ) {
+		} elseif ( is_post_type_archive( 'client_gallery' ) ) {
 
 			$file 	= 'archive-client_gallery.php';
 			$find[] = $file;
