@@ -8,9 +8,6 @@ function vca_comments_template() {
 	}
 }
 
-function vca_get_page_id( $slug ) {
-	return false;
-}
 
 function vca_get_template_part( $slug, $name = null, $load = true ) {
 
