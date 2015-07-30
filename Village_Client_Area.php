@@ -41,6 +41,7 @@ if ( ! class_exists( 'Village_Client_Area' ) ) :
 		public function __clone() {
 			_doing_it_wrong( __FUNCTION__, __( 'Cheatin&#8217; huh?', 'village' ), '1.0.0' );
 		}
+
 		/**
 		 * Unserializing instances of this class is forbidden.
 		 * @since 1.0.0
@@ -49,17 +50,44 @@ if ( ! class_exists( 'Village_Client_Area' ) ) :
 			_doing_it_wrong( __FUNCTION__, __( 'Cheatin&#8217; huh?', 'village' ), '2.1' );
 		}
 
-		public function __construct () {
+
+		/**
+		 * Constructor
+		 */
+		public function __construct() {
+
+			$this->includes();
+
 
 		}
 
 
-		public static function conf( $key ) {
-			if ( isset( self::$config[ $key ] ) ) {
-				return self::$config[ $key ];
-			} else {
-				return false;
+		/**
+		 * Include necessary files
+		 */
+		public function includes() {
+
+			require_once 'core/register_post_type.php';
+			require_once 'core/class-village-options.php';
+			require_once 'core/class-vca-option.php';
+			require_once 'core/class-vca-template-loader.php';
+			require_once 'core/class-village-gallery-data.php';
+			require_once 'core/class-village-render.php';
+
+			require_once 'includes/functions.php';
+			require_once 'includes/hooks.php';
+			require_once 'includes/ajax.php';
+			require_once 'includes/enqueue.php';
+
+			if ( function_exists( 'acf_add_local_field_group' ) ) {
+				require_once 'includes/advanced-custom-fields.php';
 			}
+
+			if ( class_exists( 'ReduxFramework' ) && class_exists( 'Village_Options' ) ) {
+				require_once( 'includes/options.php' );
+			}
+
+
 		}
 
 
@@ -102,3 +130,4 @@ if ( ! function_exists( 'VCA' ) ) {
 		return Village_Client_Area::instance();
 	}
 }
+
