@@ -12,6 +12,17 @@ $sections[] = array(
 	'title'  => 'General',
 	'icon'   => 'el-icon-wrench',
 	'fields' => array(
+
+		array(
+			'id'       => "client_area_page",
+			'title'    => "Client area archive page",
+			'subtitle' => "In which page to list all client galleries ?",
+			'type'     => 'select',
+			'data' => 'pages',
+		    'required' => 0,
+
+		),
+
 		array(
 			'id'       => "enable_favorites",
 			'title'    => "Enable Favorites",
@@ -54,7 +65,7 @@ $sections[] = array(
 // Initialize Redux:
 //-----------------------------------*/
 $args['display_name']    = 'Village Client Area';
-$args['display_version'] = '1.1.0';
+$args['display_version'] = VCA()->version;
 $args['menu_title']      = __( "Settings", 'village' );
 $args['page_slug']       = 'village-client';
 $args['menu_type'] = 'submenu';
