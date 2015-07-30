@@ -15,7 +15,7 @@ $images  = $gallery->get();
 $slug                = get_the_ID();
 $last_key            = count( $images ) - 1;
 $entry_attr_template = array(
-	'class' => array( 'vca-image', 'entry-masonry' ),
+	'class' => array( 'ca-image', 'ca-masonry-item' ),
 );
 
 $enable_favorites  = VCA_Option::get( 'enable_favorites', true );

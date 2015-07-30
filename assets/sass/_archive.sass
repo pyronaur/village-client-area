@@ -9,23 +9,21 @@
 	text-align: center
 
 
-	.date, .title
+	.ca-entry__date, .ca-entry__title
 		display: block
 
-	.date
+	.ca-entry__date
 		font-weight: normal
 		font-size: 0.875rem
 
 
-.client-area .entry-masonry a:hover
-	color: inherit
+.ca-entry
+	.ca-entry__title
+		line-height: 1
+		margin-top: .5em
+		margin-bottom: .5em
 
-
-
-.entry-client-area
-	padding: $masonry_gutter_size
-
-.client-area__filters
+.ca-filters
 	margin-bottom: $padding
 	text-align: center
 
@@ -34,11 +32,11 @@
 		display: block
 		
 
-.client-area-filter
+.ca-filters__search
 	width: 50%
 	max-width: 600px
 
-	font-size: 2.4rem
+	font-size: 2rem
 	font-weight: 400
 
 	border-width: 0

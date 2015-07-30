@@ -49,6 +49,11 @@ require_once 'includes/hooks.php';
 require_once 'includes/ajax.php';
 require_once 'includes/enqueue.php';
 
+if( function_exists('acf_add_local_field_group') ) {
+	require_once 'includes/advanced-custom-fields.php';
+}
+
+
 
 
 if( class_exists( 'ReduxFramework') && class_exists('Village_Options') ) {

@@ -23,11 +23,13 @@ $dark: black
 	&:after
 		clear: both
 
-.grid-sizer, .entry-masonry
+.grid-sizer, .ca-masonry-item
 	width: 33%
-	padding: 3px
 
-@import "client"
+.ca-masonry-item
+	border: 5px solid transparent
+
+@import "archive"
 @import "single"
 @import "password_protected"
 @import "error"

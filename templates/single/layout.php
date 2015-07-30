@@ -13,7 +13,7 @@
 		}
 
 		$masonry_data = array(
-			'itemSelector' => '.entry-masonry',
+			'itemSelector' => '.ca-masonry-item',
 			'columnWidth' => '.grid-sizer'
 		);
 		?>

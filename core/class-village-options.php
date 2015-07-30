@@ -1,5 +1,12 @@
 <?php
 
+
+/**
+ * @TODO:
+ *      * Trim this class to only necessary options
+ *      * Rename Village_Options for future compitability
+ *
+ */
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
