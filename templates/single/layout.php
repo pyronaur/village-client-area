@@ -14,43 +14,43 @@
 
 		$masonry_data = array(
 			'itemSelector' => '.ca-masonry-item',
-			'columnWidth' => '.grid-sizer'
+			'columnWidth'  => '.grid-sizer'
 		);
 		?>
 
-		<div id="primary" class="content-area">
-			<main id="main" class="site-main" role="main">
+		<?php do_action( 'ca_content/before' ); ?>
 
-				<div <?php post_class( 'entry-client-area' ) ?>>
+		<div <?php post_class( 'entry-client-area' ) ?>>
 
-					<?php vca_get_template_part( 'single/content-description' ); ?>
+			<?php vca_get_template_part( 'single/content-description' ); ?>
 
-					<?php
-					if( CA_Option::get('enable_favorites', true) ) {
-						vca_get_template_part( 'single/gallery-filters' );
-					}
-					?>
+			<?php
+			if ( CA_Option::get( 'enable_favorites', true ) ) {
+				vca_get_template_part( 'single/gallery-filters' );
+			}
+			?>
 
-					<div class="masonry js__masonry js__photoswipe js-masonry"<?php Village_Render::data('masonry-options', $masonry_data); ?>>
-						<div class="grid-sizer"></div>
-						<?php vca_get_template_part( 'single/content-gallery' ); ?>
-					</div>
-					<!-- .masonry -->
+			<div
+				class="masonry js__masonry js__photoswipe js-masonry"<?php Village_Render::data( 'masonry-options', $masonry_data ); ?>>
+				<div class="grid-sizer"></div>
+				<?php vca_get_template_part( 'single/content-gallery' ); ?>
+			</div>
+			<!-- .masonry -->
 
-				</div>
-
-				<?php vca_comments_template(); ?>
-
-				<?php
-				/**
-				 * Markup for JavaScript features
-				 */
-				vca_get_template_part( 'single/js-markup' )
-				?>
-
-
-			</main>
 		</div>
+
+		<?php vca_comments_template(); ?>
+
+		<?php
+		/**
+		 * Markup for JavaScript features
+		 */
+		vca_get_template_part( 'single/js-markup' )
+		?>
+
+
+		<?php do_action( 'ca_content/after' ); ?>
+
 	<?php endwhile; ?>
 
 

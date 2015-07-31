@@ -80,6 +80,12 @@ if ( ! class_exists( 'Village_Client_Area' ) ) :
 			require_once 'includes/ajax.php';
 			require_once 'includes/enqueue.php';
 
+			// Layout related
+			require_once 'layout/template-functions.php';
+			require_once 'layout/template-hooks.php';
+
+
+
 			if ( function_exists( 'acf_add_local_field_group' ) ) {
 				require_once 'includes/advanced-custom-fields.php';
 			}
