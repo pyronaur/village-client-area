@@ -27,7 +27,7 @@
 
 					<?php
 					if( CA_Option::get('enable_favorites', true) ) {
-						vca_get_template_part( 'single/gallery-controls' );
+						vca_get_template_part( 'single/gallery-filters' );
 					}
 					?>
 

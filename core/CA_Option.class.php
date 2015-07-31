@@ -43,7 +43,7 @@ class CA_Option {
 	}
 
 	private static function return_option( $key, $value ) {
-		return apply_filters( 'vca_' . $key, $value );
+		return apply_filters( 'ca_' . $key, $value );
 	}
 
 
