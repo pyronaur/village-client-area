@@ -9,7 +9,7 @@
  */
 
 
-$gallery = new CA_Gallery_Data( get_the_ID(), array( 'full' ), 'portfolio_masonry' );
+$gallery = new CA_Gallery_Data( get_the_ID(), array( 'full' ), 'ca_thumbnail' );
 $images  = $gallery->get();
 
 $slug                = get_the_ID();

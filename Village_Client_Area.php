@@ -57,6 +57,36 @@ if ( ! class_exists( 'Village_Client_Area' ) ) :
 		public function __construct() {
 
 			$this->includes();
+			$this->setup_image_size();
+
+
+		}
+
+
+		public function setup_image_size() {
+
+			global $content_width;
+			if( $content_width > 0 ) {
+
+				// 3 columns
+				$w = ceil( $content_width / 3 );
+				$h = floor( $w * 1.6 );
+
+				$image = array(
+					'width' => $w,
+					'height' => $h
+				);
+
+			} else {
+				$image = array(
+					'width' => 470,
+					'height' => 750
+				);
+			}
+
+			$image['crop'] = false;
+			$image = apply_filters('ca_thumbnail_size', $image);
+			add_image_size( 'ca_thumbnail', $image['width'], $image['height'], $image['crop'] );
 
 
 		}

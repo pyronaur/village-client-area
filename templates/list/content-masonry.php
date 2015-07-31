@@ -26,7 +26,7 @@ if ( ! isset( $village_query ) ) {
 				<a class="js__unload" href="<?php the_permalink() ?>" rel="bookmark">
 
 					<div class="ca-masonry-item__background">
-						<?php the_post_thumbnail( 'portfolio_masonry' ); ?>
+						<?php the_post_thumbnail( 'ca_thumbnail' ); ?>
 					</div>
 
 					<div class="ca-masonry-item__content">
