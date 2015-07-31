@@ -3,7 +3,7 @@
 
 function vca_comments_template() {
 	// If comments are open or we have at least one comment, load up the comment template
-	if ( VCA_Option::get( 'enable_comments', true ) && ( comments_open() || '0' != get_comments_number() ) ) {
+	if ( CA_Option::get( 'enable_comments', true ) && ( comments_open() || '0' != get_comments_number() ) ) {
 		comments_template();
 	}
 }

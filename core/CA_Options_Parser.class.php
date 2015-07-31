@@ -4,16 +4,16 @@
 /**
  * @TODO:
  *      * Trim this class to only necessary options
- *      * Rename Village_Options for future compitability
+ *      * Rename CA_Options_Parser for future compitability
  *
  */
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if ( ! class_exists( 'Village_Options' ) ):
+if ( ! class_exists( 'CA_Options_Parser' ) ):
 
-	class Village_Options {
+	class CA_Options_Parser {
 
 		private static $sections;
 
@@ -27,7 +27,7 @@ if ( ! class_exists( 'Village_Options' ) ):
 			self::$sections = $sections;
 
 			foreach ( $sections as $section ) {
-				Village_Options::set_section( $opt_key, $section );
+				CA_Options_Parser::set_section( $opt_key, $section );
 			}
 
 		}

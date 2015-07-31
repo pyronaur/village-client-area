@@ -9,7 +9,7 @@
  */
 
 
-$gallery = new Village_Client_Gallery_Data( get_the_ID(), array( 'full' ), 'portfolio_masonry' );
+$gallery = new CA_Gallery_Data( get_the_ID(), array( 'full' ), 'portfolio_masonry' );
 $images  = $gallery->get();
 
 $slug                = get_the_ID();
@@ -18,8 +18,8 @@ $entry_attr_template = array(
 	'class' => array( 'ca-image', 'ca-masonry-item' ),
 );
 
-$enable_favorites  = VCA_Option::get( 'enable_favorites', true );
-$enable_smart_tags = VCA_Option::get( 'enable_smart_tags', true );
+$enable_favorites  = CA_Option::get( 'enable_favorites', true );
+$enable_smart_tags = CA_Option::get( 'enable_smart_tags', true );
 
 ?>
 
@@ -75,7 +75,7 @@ $enable_smart_tags = VCA_Option::get( 'enable_smart_tags', true );
 
 	?>
 	<div<?php Village_Render::attributes( $entry_attr ) ?>>
-		<?php // All $image and $href attributes have been escaped in Village_Client_Gallery_Data with @function wp_prepare_attachment_for_js() ?>
+		<?php // All $image and $href attributes have been escaped in CA_Gallery_Data with @function wp_prepare_attachment_for_js() ?>
 		<a<?php Village_Render::attributes( $image_link_attr ); ?> rel="village-gallery"
 		                                                           href="<?php echo esc_url_raw( $href ); ?>"
 		                                                           title="<?php echo esc_attr( $image['caption'] ); ?>">

@@ -90,5 +90,5 @@ $args['share_icons'][] = array(
 $args = apply_filters('ca_redux_args', $args);
 $sections = apply_filters('ca_redux_sections', $sections);
 
-Redux::setArgs( VCA_Option::$key, $args );
-Village_Options::set_sections( VCA_Option::$key, $sections );
+Redux::setArgs( CA_Option::$key, $args );
+CA_Options_Parser::set_sections( CA_Option::$key, $sections );

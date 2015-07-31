@@ -2,13 +2,13 @@
 /**
  * Template Loader
  *
- * @class 		WC_Template
+ * @class 		CA_Template_Loader
  * @version		2.2.0
  * @package		WooCommerce/Classes
  * @category	Class
  * @author 		WooThemes
  */
-class WC_Template_Loader {
+class CA_Template_Loader {
 
 	/**
 	 * Hook in methods
@@ -41,7 +41,7 @@ class WC_Template_Loader {
 			$find[] = $file;
 			$find[] = VCA()->template_path() . $file;
 
-		} elseif ( is_post_type_archive( 'client_gallery' ) || ( is_page() && (int) get_the_ID() === (int) VCA_Option::get('client_area_page', -1) )  ) {
+		} elseif ( is_post_type_archive( 'client_gallery' ) || ( is_page() && (int) get_the_ID() === (int) CA_Option::get('client_area_page', -1) )  ) {
 
 			$file 	= 'archive-client_gallery.php';
 			$find[] = $file;
@@ -97,4 +97,4 @@ class WC_Template_Loader {
 
 }
 
-WC_Template_Loader::init();
+CA_Template_Loader::init();

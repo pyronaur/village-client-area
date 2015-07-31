@@ -69,10 +69,10 @@ if ( ! class_exists( 'Village_Client_Area' ) ) :
 
 			require_once 'includes/register_post_type.php';
 
-			require_once 'core/Village_Options.class.php';
-			require_once 'core/VCA_Option.class.php';
-			require_once 'core/VCA_Template_Loader.class.php';
-			require_once 'core/Village_Client_Gallery_Data.class.php';
+			require_once 'core/CA_Options_Parser.class.php';
+			require_once 'core/CA_Option.class.php';
+			require_once 'core/CA_Template_Loader.class.php';
+			require_once 'core/CA_Gallery_Data.class.php';
 			require_once 'core/Village_Render.class.php';
 
 			require_once 'includes/functions.php';
@@ -84,7 +84,7 @@ if ( ! class_exists( 'Village_Client_Area' ) ) :
 				require_once 'includes/advanced-custom-fields.php';
 			}
 
-			if ( class_exists( 'ReduxFramework' ) && class_exists( 'Village_Options' ) ) {
+			if ( class_exists( 'ReduxFramework' ) && class_exists( 'CA_Options_Parser' ) ) {
 				require_once( 'includes/options.php' );
 			}
 

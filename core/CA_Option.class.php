@@ -3,7 +3,7 @@
 if( ! defined('ABSPATH') ) exit;
 
 
-class VCA_Option {
+class CA_Option {
 
 
 	private static $options = false;
