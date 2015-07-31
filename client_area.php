@@ -18,30 +18,23 @@
  *
  * @TODO:
  *
- *      * Add image size for Client Gallery!
- *
- *      * Avoid Naming collisions for Classes
- *
- *      * Sensible naming for classes
+ *      * Add filterable JavaScript Options:
+ *        + custom events when to trigger "layout" ?  ( for iScroll )
  *
  *      * Remove junk from classes
- *
- *
- *      * Move colors & fonts to theme, keep layout settings
- *
- *      * Create Fallback Styles
- *
- *      * Make PLUGIN work with Twenty Fifteen
- *
- *      * Add "woocommerce like" body open / close action
- *
  *      * Publish to Wordpress.org or Github
  *
  * @DONE
+ *
+ *       * Avoid Naming collisions for Classes
+ *      * Sensible naming for classes
  *       * DO NOT Combine Theme scripts into libs.js
  *          - Instead wp_enqueue_them as 'village-lib-' . $script_name;
  *          - Use same handles for masonry, jQache, etc.
- *
+ *      * Create Fallback Styles
+ *      * Make PLUGIN work with Twenty Fifteen
+ *      * Add "woocommerce like" body open / close action
+ *      * Add image size for Client Gallery!
  */
 
 
