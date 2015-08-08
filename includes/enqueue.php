@@ -45,4 +45,4 @@ function vca_enqueue_styles_scripts() {
 
 }
 
-add_action( 'wp_enqueue_scripts', 'vca_enqueue_styles_scripts', 50 );
+add_action( 'wp_enqueue_scripts', 'vca_enqueue_styles_scripts', 20 );
