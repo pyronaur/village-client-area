@@ -59,7 +59,7 @@ if ( ! class_exists( 'Village_Client_Area' ) ) :
 			$this->includes();
 			$this->setup_image_size();
 
-			if ( is_admin() ) {
+			if ( is_admin() && class_exists('CA_Github_Updater') ) {
 				$this->setup_updates();
 			}
 
@@ -147,7 +147,6 @@ if ( ! class_exists( 'Village_Client_Area' ) ) :
 			require_once 'core/CA_Option.class.php';
 			require_once 'core/CA_Template_Loader.class.php';
 			require_once 'core/CA_Gallery_Data.class.php';
-			require_once 'core/CA_Github_Updater.class.php';
 			require_once 'core/Village_Render.class.php';
 
 			require_once 'includes/functions.php';
@@ -159,6 +158,9 @@ if ( ! class_exists( 'Village_Client_Area' ) ) :
 			require_once 'layout/template-functions.php';
 			require_once 'layout/template-hooks.php';
 
+			if( is_admin() ) {
+				require_once 'core/CA_Github_Updater.class.php';
+			}
 
 			if ( function_exists( 'acf_add_local_field_group' ) ) {
 				require_once 'includes/advanced-custom-fields.php';
