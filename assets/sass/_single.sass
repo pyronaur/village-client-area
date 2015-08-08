@@ -12,7 +12,7 @@
 	img
 		cursor: zoom-in
 
-	.image-meta
+	&__meta
 		@extend %cf
 		padding: $halfling
 		font-size: 0.875em
@@ -30,42 +30,43 @@
 
 		background-color: $light
 
+	&__id
+		float: left
+		flex: 1
+
 	.icon
 		transition: transform 300ms ease-in-out
 		display: block
 
-	.image-id
-		float: left
-		flex: 1
 
 
-	.image-state
-		$icon_size: 1em
-		position: relative
-		font-size: $icon_size
-		text-align: right
 
-		float: right
+.ca-image-state
+	$icon_size: 1em
+	position: relative
+	font-size: $icon_size
+	text-align: right
 
-		flex: 1
-		
-		.label
-			font-size: 0.75em
+	float: right
+	flex: 1
 
 	// Default state is "unselected", hide "selected"
 	.when-favorite-selected
 		display: none
 
-	.is-selected
+	.is-selected &
 		.when-favorite-selected
 			display: block
 		.when-favorite-unselected
 			display: none
 
-	.image-state__status
+	.label
+		font-size: 0.75em
+
+	.ca-image-state__status
 		float: right
 
-	.image-state__actions
+	.ca-image-state__actions
 		float: right
 		text-transform: uppercase
 		margin-right: $tiny

@@ -1,16 +1,16 @@
-<div class="image-state">
+<div class="ca-image-state">
 
-	<div class="image-state__status">
+	<div class="ca-image-state__status">
 							<span class="when-favorite-selected">
-								<i class="label"><?php _e('Selected', 'village'); ?></i>
+								<i class="label"><?php _e( 'Selected', 'village' ); ?></i>
 							</span>
 							<span class="when-favorite-unselected">
-								<i class="label"><?php _e('Not Selected', 'village'); ?></i>
+								<i class="label"><?php _e( 'Not Selected', 'village' ); ?></i>
 							</span>
 	</div>
-	<!-- .image-state__icon -->
+	<!-- .ca-image-state__icon -->
 
-	<div class="image-state__actions">
+	<div class="ca-image-state__actions">
 							<span class="when-favorite-selected action">
 								<?php _e( "Unselect", "village" ) ?>
 							</span>
@@ -18,6 +18,6 @@
 								<?php _e( "Select", "village" ) ?>
 							</span>
 	</div>
-	<!-- .image-state__actions -->
+	<!-- .ca-image-state__actions -->
 
-</div><!-- .image-state -->
+</div><!-- .ca-image-state -->

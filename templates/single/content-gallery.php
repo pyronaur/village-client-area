@@ -61,7 +61,7 @@ $enable_smart_tags = CA_Option::get( 'enable_smart_tags', true );
 
 
 	$entry_meta = array(
-		'class' => array( 'image-meta' ),
+		'class' => array( 'ca-image__meta' ),
 		'data'  => array(
 			'image-id' => $image['id'],
 		)
@@ -87,11 +87,11 @@ $enable_smart_tags = CA_Option::get( 'enable_smart_tags', true );
 			<div<?php Village_Render::attributes( $entry_meta ); ?>>
 
 				<?php if ( $enable_smart_tags ) : ?>
-					<div class="image-id">#<?php echo $image['id']; ?></div>
+					<div class="ca-image__id">#<?php echo $image['id']; ?></div>
 				<?php endif; ?>
 
 				<?php if ( $enable_favorites ) {
-					vca_get_template_part('single/image-status');
+					vca_get_template_part('single/image-actions');
 				}?>
 
 			</div>
