@@ -1,7 +1,7 @@
 <?php
 
 // Prevent loading this file directly and/or if the class is already defined
-if ( ! defined( 'ABSPATH' ) || class_exists( 'Village_WP_GitHub_Updater' ) )
+if ( ! defined( 'ABSPATH' ) || class_exists( 'CA_Github_Updater' ) )
 	return;
 
 /**
@@ -10,12 +10,12 @@ if ( ! defined( 'ABSPATH' ) || class_exists( 'Village_WP_GitHub_Updater' ) )
  * @version 1.6
  * @author Joachim Kudish <info@jkudish.com>
  * @link http://jkudish.com
- * @package Village_WP_GitHub_Updater
+ * @package CA_Github_Updater
  * @license http://www.gnu.org/copyleft/gpl.html GNU Public License
  * @copyright Copyright (c) 2011-2013, Joachim Kudish
  * ------
  * @modified:
- *          Changed class name to 'Village_WP_Github_Updater' in order to prevent any accidental class-name conflicts.
+ *          Changed class name to 'CA_Github_Updater' in order to prevent any accidental class-name conflicts.
  * ------
  *
  * GNU General Public License, Free Software Foundation
@@ -35,7 +35,7 @@ if ( ! defined( 'ABSPATH' ) || class_exists( 'Village_WP_GitHub_Updater' ) )
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-class Village_WP_GitHub_Updater {
+class CA_Github_Updater {
 
 	/**
 	 * GitHub Updater version

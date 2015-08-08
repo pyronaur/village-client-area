@@ -59,33 +59,77 @@ if ( ! class_exists( 'Village_Client_Area' ) ) :
 			$this->includes();
 			$this->setup_image_size();
 
+			if ( is_admin() ) {
+				$this->setup_updates();
+			}
 
+
+		}
+
+		public function setup_updates() {
+
+			$config = array(
+				// this is the slug of your plugin
+				'slug'               => plugin_basename( __FILE__ ),
+
+				// this is the name of the folder your plugin lives in
+				'proper_folder_name' => 'village-client-area',
+
+				// the GitHub API url of your GitHub repo
+				'api_url'            => 'https://github.com/justnorris/village-client-area',
+
+				// the GitHub raw url of your GitHub repo
+				'raw_url'            => 'https://raw.github.com/justnorris/village-client-area/master',
+
+				// the GitHub url of your GitHub repo
+				'github_url'         => 'https://github.com/justnorris/village-client-area',
+
+				// the zip url of the GitHub repo
+				'zip_url'            => 'https://github.com/justnorris/village-client-area/zipball/master',
+
+				// whether WP should check the validity of the SSL cert when getting an update, see https://github.com/jkudish/WordPress-GitHub-Plugin-Updater/issues/2 and https://github.com/jkudish/WordPress-GitHub-Plugin-Updater/issues/4 for details
+				'sslverify'          => true,
+
+				// which version of WordPress does your plugin require?
+				'requires'           => '4.0',
+
+				// which version of WordPress is your plugin tested up to?
+				'tested'             => '4.3',
+
+				// which file to use as the readme for the version number
+				'readme'             => 'VERSION.md',
+
+				// Access private repositories by authorizing under Appearance > GitHub Updates when this example plugin is installed
+				'access_token'       => '',
+			);
+
+			new CA_Github_Updater( $config );
 		}
 
 
 		public function setup_image_size() {
 
 			global $content_width;
-			if( $content_width > 0 ) {
+			if ( $content_width > 0 ) {
 
 				// 3 columns
 				$w = ceil( $content_width / 3 );
 				$h = floor( $w * 1.6 );
 
 				$image = array(
-					'width' => $w,
+					'width'  => $w,
 					'height' => $h
 				);
 
 			} else {
 				$image = array(
-					'width' => 470,
+					'width'  => 470,
 					'height' => 750
 				);
 			}
 
 			$image['crop'] = false;
-			$image = apply_filters('ca_thumbnail_size', $image);
+			$image         = apply_filters( 'ca_thumbnail_size', $image );
 			add_image_size( 'ca_thumbnail', $image['width'], $image['height'], $image['crop'] );
 
 
@@ -103,6 +147,7 @@ if ( ! class_exists( 'Village_Client_Area' ) ) :
 			require_once 'core/CA_Option.class.php';
 			require_once 'core/CA_Template_Loader.class.php';
 			require_once 'core/CA_Gallery_Data.class.php';
+			require_once 'core/CA_Github_Updater.class.php';
 			require_once 'core/Village_Render.class.php';
 
 			require_once 'includes/functions.php';
@@ -113,7 +158,6 @@ if ( ! class_exists( 'Village_Client_Area' ) ) :
 			// Layout related
 			require_once 'layout/template-functions.php';
 			require_once 'layout/template-hooks.php';
-
 
 
 			if ( function_exists( 'acf_add_local_field_group' ) ) {
