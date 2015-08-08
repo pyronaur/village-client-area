@@ -17,9 +17,9 @@ if ( ! class_exists( 'Village_Client_Area' ) ) :
 
 
 		/**
-		 * Main WooCommerce Instance
+		 * Main Client Area Instance
 		 *
-		 * Ensures only one instance of WooCommerce is loaded or can be loaded.
+		 * Ensures only one instance of Client Area is loaded or can be loaded.
 		 *
 		 * @since 1.0.0
 		 * @static
