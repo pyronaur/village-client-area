@@ -79,13 +79,13 @@ if ( ! class_exists( 'Village_Client_Area' ) ) :
 				'api_url'            => 'https://github.com/justnorris/village-client-area',
 
 				// the GitHub raw url of your GitHub repo
-				'raw_url'            => 'https://raw.github.com/justnorris/village-client-area/master',
+				'raw_url'            => 'https://raw.github.com/justnorris/village-client-area/stable',
 
 				// the GitHub url of your GitHub repo
 				'github_url'         => 'https://github.com/justnorris/village-client-area',
 
 				// the zip url of the GitHub repo
-				'zip_url'            => 'https://github.com/justnorris/village-client-area/zipball/master',
+				'zip_url'            => 'https://github.com/justnorris/village-client-area/zipball/stable',
 
 				// whether WP should check the validity of the SSL cert when getting an update, see https://github.com/jkudish/WordPress-GitHub-Plugin-Updater/issues/2 and https://github.com/jkudish/WordPress-GitHub-Plugin-Updater/issues/4 for details
 				'sslverify'          => true,
