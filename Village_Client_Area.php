@@ -59,51 +59,6 @@ if ( ! class_exists( 'Village_Client_Area' ) ) :
 			$this->includes();
 			$this->setup_image_size();
 
-			if ( is_admin() && class_exists('CA_Github_Updater') ) {
-				$this->setup_updates();
-			}
-
-
-		}
-
-		public function setup_updates() {
-
-			$config = array(
-				// this is the slug of your plugin
-				'slug'               => plugin_basename( __FILE__ ),
-
-				// this is the name of the folder your plugin lives in
-				'proper_folder_name' => 'village-client-area',
-
-				// the GitHub API url of your GitHub repo
-				'api_url'            => 'https://github.com/justnorris/village-client-area',
-
-				// the GitHub raw url of your GitHub repo
-				'raw_url'            => 'https://raw.github.com/justnorris/village-client-area/stable',
-
-				// the GitHub url of your GitHub repo
-				'github_url'         => 'https://github.com/justnorris/village-client-area',
-
-				// the zip url of the GitHub repo
-				'zip_url'            => 'https://github.com/justnorris/village-client-area/zipball/stable',
-
-				// whether WP should check the validity of the SSL cert when getting an update, see https://github.com/jkudish/WordPress-GitHub-Plugin-Updater/issues/2 and https://github.com/jkudish/WordPress-GitHub-Plugin-Updater/issues/4 for details
-				'sslverify'          => true,
-
-				// which version of WordPress does your plugin require?
-				'requires'           => '4.0',
-
-				// which version of WordPress is your plugin tested up to?
-				'tested'             => '4.3',
-
-				// which file to use as the readme for the version number
-				'readme'             => 'VERSION.md',
-
-				// Access private repositories by authorizing under Appearance > GitHub Updates when this example plugin is installed
-				'access_token'       => '',
-			);
-
-			new CA_Github_Updater( $config );
 		}
 
 
@@ -157,11 +112,7 @@ if ( ! class_exists( 'Village_Client_Area' ) ) :
 			// Layout related
 			require_once 'layout/template-functions.php';
 			require_once 'layout/template-hooks.php';
-
-			if( is_admin() ) {
-				require_once 'core/CA_Github_Updater.class.php';
-			}
-
+			
 			if ( function_exists( 'acf_add_local_field_group' ) ) {
 				require_once 'includes/advanced-custom-fields.php';
 			}
