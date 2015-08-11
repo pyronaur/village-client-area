@@ -11,6 +11,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( ! isset( $village_query ) ) {
 	return;
 }
+
+$masonry_data = array(
+	'itemSelector' => '.ca-masonry-item',
+	'columnWidth'  => '.grid-sizer'
+);
+
 ?>
 <?php if ( $village_query->have_posts() ) : ?>
 
