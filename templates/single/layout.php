@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('client-area'); ?>
 
 
 <?php if ( have_posts() ) : ?>
@@ -57,5 +57,5 @@
 <?php endif; ?>
 
 <?php
-get_footer();
+get_footer('client-area');
 ?>
