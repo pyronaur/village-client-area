@@ -20,7 +20,7 @@ CURRENTDIR=`pwd`
 default_svnpath="/tmp/$PLUGINSLUG"
 default_svnurl="http://plugins.svn.wordpress.org/$PLUGINSLUG"
 default_svnuser="justnorris"
-default_plugindir="$CURRENTDIR/$PLUGINSLUG"
+default_plugindir="."
 default_mainfile="$PLUGINSLUG.php"
 
 echo "1b) Path to a local directory where a temporary SVN checkout can be made."
