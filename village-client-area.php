@@ -3,7 +3,7 @@
  * Plugin Name:       Village Client Area
  * Plugin URI:        http://themevillage.net
  * Description:       A client area plugin for Photographers. Requires Plugins: Advanced Custom Fields Pro and Redux Framework
- * Version:           1.0.1
+ * Version:           1.0.2
  * Author:            ThemeVillage
  * Author URI:        http://themevillage.net
  * License:           GPL-3.0+
@@ -14,27 +14,11 @@
 
 
 /**
- *
- *
  * @TODO:
  *
  *      * Add filterable JavaScript Options:
- *        + custom events when to trigger "layout" ?  ( for iScroll )
- *
+ *        + custom events when to trigger "layout" ?  ( for iScroll, AJAX, etc. )
  *      * Remove junk from classes
- *      * Publish to Wordpress.org or Github
- *
- * @DONE
- *
- *       * Avoid Naming collisions for Classes
- *      * Sensible naming for classes
- *       * DO NOT Combine Theme scripts into libs.js
- *          - Instead wp_enqueue_them as 'village-lib-' . $script_name;
- *          - Use same handles for masonry, jQache, etc.
- *      * Create Fallback Styles
- *      * Make PLUGIN work with Twenty Fifteen
- *      * Add "woocommerce like" body open / close action
- *      * Add image size for Client Gallery!
  */
 
 
