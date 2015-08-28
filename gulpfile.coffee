@@ -9,5 +9,5 @@
 	To add a new task, simply add a new task file to gulp/tasks.
 ###
 
-require "./assets/gulp/config"
-require "./assets/gulp/index"
+require "./resources/gulp/config"
+require "./resources/gulp/index"

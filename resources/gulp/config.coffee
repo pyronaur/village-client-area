@@ -4,7 +4,7 @@ GLOBAL.config =
 
 	# General Config
 	url: "http://tal.localbox.in"
-	build: "./assets/build"
+	build: "./resources/build"
 
 	mode: 'dev'
 
@@ -13,17 +13,17 @@ GLOBAL.config =
 	# 	Sass
 	# **************************
 	sass:
-		source: "./assets/sass"
-		ouput: "./assets/build/app.css"
+		source: "./resources/sass"
+		ouput: "./resources/build/app.css"
 
 	# **************************
 	# 	CoffeeScript
 	# **************************
 	coffee:
-		source: "./assets/coffee"
+		source: "./resources/coffee"
 
 	libs:
-		source: './assets/libs'
+		source: './resources/libs'
 
 	### External Libraries & Their URLs ###
 	external_libs:

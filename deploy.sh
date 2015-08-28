@@ -134,9 +134,9 @@ Thumbs.db
 .git
 .gitignore
 .sass-cache
-assets/coffee
-assets/gulp
-assets/sass
+resources/coffee
+resources/gulp
+resources/sass
 gulpfile.coffee
 deploy.sh
 package.json
