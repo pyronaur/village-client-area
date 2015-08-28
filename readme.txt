@@ -1,6 +1,6 @@
 === Plugin Name ===
 Contributors: justnorris
-Tags: client-area, photography
+Tags: client-area, photography, customer-area,
 Requires at least: 4.0
 Tested up to: 4.3.0
 Stable tag: 1.0.3
