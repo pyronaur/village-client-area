@@ -1,4 +1,4 @@
-GLOBAL.production = false
+GLOBAL.production = true
 
 GLOBAL.config =
 
