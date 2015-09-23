@@ -30,10 +30,11 @@ show_image_preview = ( image_id, $el ) ->
 	el_position = $el.offset()
 	el_height = $el.outerHeight()
 
-	$$('#ca-preview').css Hooks.applyFilters 'client.previewPosition', ->
+	$$('#ca-preview').css Hooks.applyFilters 'client.previewPosition',{
 		top: el_position.top + el_height + 2
 		left: el_position.left
 		display: 'block'
+	}
 
 	LAST_ID = image_id
 	return
