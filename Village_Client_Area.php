@@ -58,6 +58,21 @@ if ( ! class_exists( 'Village_Client_Area' ) ) :
 
 			$this->includes();
 			$this->setup_image_size();
+			$this->add_actions();
+		}
+
+		public function add_actions() {
+
+			# Wait WP to initialize before including Custom Fields Config
+			add_action( 'init', array( &$this, 'include_custom_fields_config' ) );
+		}
+
+
+		public function include_custom_fields_config() {
+
+			if ( function_exists( 'acf_add_local_field_group' ) ) {
+				require_once 'includes/advanced-custom-fields.php';
+			}
 
 		}
 
@@ -112,7 +127,7 @@ if ( ! class_exists( 'Village_Client_Area' ) ) :
 			// Layout related
 			require_once 'layout/template-functions.php';
 			require_once 'layout/template-hooks.php';
-			
+
 			if ( function_exists( 'acf_add_local_field_group' ) ) {
 				require_once 'includes/advanced-custom-fields.php';
 			}
