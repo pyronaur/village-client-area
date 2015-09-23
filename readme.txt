@@ -43,6 +43,9 @@ This section describes how to install the plugin and get it working.
 
 
 == Changelog ==
+= 1.0.8 =
+* Added WP Filter: 'client.previewPosition'
+
 = 1.0.5 =
 * Added WP Hooks: 'client.filters/init' and 'client.filters/destroy'
 
