@@ -4,57 +4,20 @@
 echo
 echo "WordPress Plugin Git-Flow SVN Deploy v2.0.0-dev"
 echo
-echo "Step 1. Let's collect some information first."
-echo
-echo "Default values are in brackets - just hit enter to accept them."
+echo "Village Client Area"
 echo
 
-# Get some user input
-# Can't use the -i flag for read, since that doesn't work for bash 3
-printf "1a) WordPress Repo Plugin Slug e.g. my-awesome-plugin: "
-read -e PLUGINSLUG
-echo
 
 # Set up some default values. Feel free to change these in your own script
 CURRENTDIR=`pwd`
-default_svnpath="/tmp/$PLUGINSLUG"
-default_svnurl="http://plugins.svn.wordpress.org/$PLUGINSLUG"
-default_svnuser="justnorris"
-default_plugindir="."
-default_mainfile="$PLUGINSLUG.php"
+PLUGINSLUG="village-client-area"
+SVNPATH="/tmp/$PLUGINSLUG"
+SVNURL="http://plugins.svn.wordpress.org/$PLUGINSLUG"
+SVNUSER="justnorris"
+PLUGINDIR="."
+MAINFILE="$PLUGINSLUG.php"
 
-echo "1b) Path to a local directory where a temporary SVN checkout can be made."
-printf "No trailing slash and don't add trunk ($default_svnpath): "
-read -e input
-input="${input%/}" # Strip trailing slash
-SVNPATH="${input:-$default_svnpath}" # Populate with default if empty
-echo
-
-echo "1c) Remote SVN repo on WordPress.org. No trailing slash."
-printf "($default_svnurl): "
-read -e input
-input="${input%/}" # Strip trailing slash
-SVNURL="${input:-$default_svnurl}" # Populate with default if empty
-echo
-
-printf "1d) Your WordPress repo SVN username ($default_svnuser): "
-read -e input
-SVNUSER="${input:-$default_svnuser}" # Populate with default if empty
-echo
-
-echo "1e) Your local plugin root directory, the Git repo. No trailing slash."
-printf "($default_plugindir): "
-read -e  input
-input="${input%/}" # Strip trailing slash
-PLUGINDIR="${input:-$default_plugindir}" # Populate with default if empty
-echo
-
-printf "1f) Name of the main plugin file ($default_mainfile): "
-read -e input
-MAINFILE="${input:-$default_mainfile}" # Populate with default if empty
-echo
-
-echo "That's all of the data collected."
+echo "Config we're going to use:"
 echo
 echo "Slug: $PLUGINSLUG"
 echo "Temp checkout path: $SVNPATH"
