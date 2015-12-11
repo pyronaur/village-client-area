@@ -133,10 +133,8 @@ if ( ! class_exists( 'Village_Client_Area' ) ) :
 			}
 
 			if ( class_exists( 'ReduxFramework' ) && class_exists( 'CA_Options_Parser' ) ) {
-				require_once( 'includes/options.php' );
+				require_once( 'includes/redux-options.php' );
 			}
-
-
 		}
 
 

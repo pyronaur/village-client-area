@@ -1,9 +1,6 @@
 <?php
-
 $sections = array();
 $args = array();
-
-
 
 // ------------------------
 //   Tab: Advanced
