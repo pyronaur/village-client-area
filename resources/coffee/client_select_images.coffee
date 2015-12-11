@@ -33,7 +33,7 @@ display_error_message = ( $el ) ->
 	if not image_id
 		image_id = 0
 
-	$error = $$('.ca-error__message.js__template')
+	$error = $('.ca-error__message.js__template')
 		.clone()
 		.removeClass('js__template')
 
@@ -44,7 +44,7 @@ display_error_message = ( $el ) ->
 
 	$error
 		.css('opacity', 0)
-		.appendTo( $$('.ca-error__container') )
+		.appendTo( $('.ca-error__container') )
 		.velocity
 			properties:
 				translateY: [0, 10]

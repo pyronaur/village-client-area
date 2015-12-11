@@ -48,7 +48,7 @@ do_filter = (e) ->
 	# We need something to search for
 	if val.length < 1
 		__$TARGETS.css 'display', ''
-		$$('.masonry').masonry()
+		$('.masonry').masonry()
 		return
 
 	###
@@ -73,7 +73,7 @@ do_filter = (e) ->
 		__$TARGETS.css 'display', ''
 		__$INPUT.addClass('not-found')
 
-	$$('.masonry').masonry()
+	$('.masonry').masonry()
 
 throttled_filter = _.throttle( do_filter, 750 )
 
