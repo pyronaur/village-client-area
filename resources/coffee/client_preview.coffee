@@ -1,9 +1,4 @@
 
-
-
-return if $('#ca-preview').length isnt 1
-
-
 LAST_ID = -1
 Hooks.addAction 'theme.resized', ->
 	LAST_ID = -1
@@ -52,7 +47,23 @@ on_mouse_enter = ->
 
 	show_image_preview( image_id, $this )
 
+initialize = ->
+	if $('#ca-preview').length > 0
+		$(document)
+			.on 'mouseenter', '.ca-preview-link', on_mouse_enter
+			.on 'mouseleave', '.ca-preview-link', hide_image_preview
 
-$(document)
-	.on 'mouseenter', '.ca-preview-link', on_mouse_enter
-	.on 'mouseleave', '.ca-preview-link', hide_image_preview
+destroy = ->
+	$(document)
+		.off 'mouseenter', '.ca-preview-link', on_mouse_enter
+		.off 'mouseleave', '.ca-preview-link', hide_image_preview
+
+
+###
+    Attach Events
+###
+if App.config.standalone
+	$(document).ready(initialize)
+
+Hooks.addAction 'client.init', initialize
+Hooks.addAction 'client.destroy', destroy

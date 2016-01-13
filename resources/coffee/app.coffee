@@ -8,4 +8,4 @@ __default_settings =
 	standalone: true
 
 
-App.config = $.extend true, {}, __default_settings, __CLIENT_AREA.config
+App.config = $.extend true, {}, __default_settings, window.__CLIENT_AREA
