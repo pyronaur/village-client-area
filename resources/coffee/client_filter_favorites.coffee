@@ -26,8 +26,7 @@ class VCA_Filters
 
 filters = new VCA_Filters
 
-$('.js__ca-action').on 'click', ->
-
+$(document).on 'click', '.js__ca-action', ->
 	# Setup
 	$this = $(this)
 	action = $this.data('action')

@@ -67,7 +67,7 @@ display_error_message = ( $el ) ->
 ###
     Attach Events to .image-meta
 ###
-$('.ca-image .ca-image__meta').on 'click', ->
+$(document).on 'click', '.ca-image .ca-image__meta', ->
 
 	$this = $(this)
 	image_id = $this.data('imageId')

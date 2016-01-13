@@ -43,8 +43,7 @@ show_image_preview = ( image_id, $el ) ->
 ###
    Attach Events to mouseenter and mouseleave
 ###
-
-$('.ca-preview-link').on "mouseenter", ->
+on_mouse_enter = ->
 	$this = $(this)
 	image_hash = $this.text()
 
@@ -53,4 +52,7 @@ $('.ca-preview-link').on "mouseenter", ->
 
 	show_image_preview( image_id, $this )
 
-$('.ca-preview-link').on "mouseleave", hide_image_preview
+
+$(document)
+	.on 'mouseenter', '.ca-preview-link', on_mouse_enter
+	.on 'mouseleave', '.ca-preview-link', hide_image_preview
