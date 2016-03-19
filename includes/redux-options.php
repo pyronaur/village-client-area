@@ -63,7 +63,7 @@ $sections[] = array(
 //-----------------------------------*/
 $args['display_name']    = 'Village Client Area';
 $args['display_version'] = VCA()->version;
-$args['menu_title']      = __( "Settings", 'village' );
+$args['menu_title']      = esc_html__( "Settings", 'village-area' );
 $args['page_slug']       = 'village-client';
 $args['menu_type'] = 'submenu';
 $args['page_parent'] = 'edit.php?post_type=client_gallery';

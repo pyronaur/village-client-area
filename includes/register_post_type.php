@@ -6,19 +6,19 @@ if ( ! function_exists( 'village_client_area' ) ) {
 	function village_client_area() {
 
 		$labels  = array(
-			'name'               => _x( 'Client Galleries', 'Post Type General Name', 'village' ),
-			'singular_name'      => _x( 'Client Gallery', 'Post Type Singular Name', 'village' ),
-			'menu_name'          => __( 'Client Area', 'village' ),
-			'parent_item_colon'  => __( 'Parent Gallery:', 'village' ),
-			'all_items'          => __( 'All Galleries', 'village' ),
-			'view_item'          => __( 'View Gallery', 'village' ),
-			'add_new_item'       => __( 'Add Gallery', 'village' ),
-			'add_new'            => __( 'Add New', 'village' ),
-			'edit_item'          => __( 'Edit Gallery', 'village' ),
-			'update_item'        => __( 'Update Gallery', 'village' ),
-			'search_items'       => __( 'Search Galleries', 'village' ),
-			'not_found'          => __( 'Not found', 'village' ),
-			'not_found_in_trash' => __( 'Not found in Trash', 'village' ),
+			'name'               => _x( 'Client Galleries', 'Post Type General Name', 'village-area' ),
+			'singular_name'      => _x( 'Client Gallery', 'Post Type Singular Name', 'village-area' ),
+			'menu_name'          => esc_html__( 'Client Area', 'village-area' ),
+			'parent_item_colon'  => esc_html__( 'Parent Gallery:', 'village-area' ),
+			'all_items'          => esc_html__( 'All Galleries', 'village-area' ),
+			'view_item'          => esc_html__( 'View Gallery', 'village-area' ),
+			'add_new_item'       => esc_html__( 'Add Gallery', 'village-area' ),
+			'add_new'            => esc_html__( 'Add New', 'village-area' ),
+			'edit_item'          => esc_html__( 'Edit Gallery', 'village-area' ),
+			'update_item'        => esc_html__( 'Update Gallery', 'village-area' ),
+			'search_items'       => esc_html__( 'Search Galleries', 'village-area' ),
+			'not_found'          => esc_html__( 'Not found', 'village-area' ),
+			'not_found_in_trash' => esc_html__( 'Not found in Trash', 'village-area' ),
 		);
 		$rewrite = array(
 			'slug'       => 'client-area',
@@ -28,8 +28,8 @@ if ( ! function_exists( 'village_client_area' ) ) {
 		);
 
 		$args = array(
-			'label'               => __( 'client_gallery', 'village' ),
-			'description'         => __( 'Client Galleries', 'village' ),
+			'label'               => esc_html__( 'client_gallery', 'village-area' ),
+			'description'         => esc_html__( 'Client Galleries', 'village-area' ),
 			'labels'              => $labels,
 			'supports'            => array( 'title', 'editor', 'thumbnail', 'revisions', 'custom-fields' ),
 			'hierarchical'        => false,

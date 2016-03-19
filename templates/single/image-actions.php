@@ -2,21 +2,21 @@
 
 	<div class="ca-image-state__status">
 							<span class="when-favorite-selected">
-								<i class="label"><?php _e( 'Selected', 'village' ); ?></i>
+								<i class="label"><?php esc_html_e( 'Selected', 'village-area' ); ?></i>
 							</span>
 							<span class="when-favorite-unselected">
-								<i class="label"><?php _e( 'Not Selected', 'village' ); ?></i>
+								<i class="label"><?php esc_html_e( 'Not Selected', 'village-area' ); ?></i>
 							</span>
 	</div>
 	<!-- .ca-image-state__icon -->
 
 	<div class="ca-image-state__actions">
 							<span class="when-favorite-selected action">
-								<?php _e( "Unselect", "village" ) ?>
+								<?php esc_html_e( 'Unselect', 'village-area' ) ?>
 							</span>
 							<span class="when-favorite-unselected action">
-								<?php _e( "Select", "village" ) ?>
-							</span>
+								<?php esc_html_e( 'Select', 'village-area' ) ?>
+							</span''
 	</div>
 	<!-- .ca-image-state__actions -->
 

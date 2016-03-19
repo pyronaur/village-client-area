@@ -44,6 +44,8 @@ This section describes how to install the plugin and get it working.
 
 == Changelog ==
 = 1.1.2 =
+* Change text-domain from 'village' to 'village-area'
+* Improve i18n functions
 * Add WordPress Filters:
 	* 'village_client_area/acf_settings'
 	* 'village_client_area/acf_settings_featured'
