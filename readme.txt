@@ -43,6 +43,13 @@ This section describes how to install the plugin and get it working.
 
 
 == Changelog ==
+= 1.1.2 =
+* Add WordPress Filters:
+	* 'village_client_area/acf_settings'
+	* 'village_client_area/acf_settings_featured'
+	* 'village_client_area/post_type'
+
+
 = 1.1.1 =
 * Fix: Selecting/Deselecting AJAX Loaded entries
 
