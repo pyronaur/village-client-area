@@ -6,7 +6,7 @@ class VCA_Filters
 	selected: ->
 		@all()
 
-		$('.ca-image')
+		$('.ca-masonry-item')
 			.filter(-> ($(this).find('.is-selected').length isnt 1))
 			.css('display', 'none')
 
@@ -14,14 +14,14 @@ class VCA_Filters
 
 	unselected: ->
 		@all()
-		$('.ca-image')
+		$('.ca-masonry-item')
 			.filter(-> ($(this).find('.is-selected').length is 1))
 			.css('display', 'none')
 
 		@reload()
 
 	all: ->
-		$('.ca-image').css('display', '')
+		$('.ca-masonry-item').css('display', '')
 		@reload()
 
 filters = new VCA_Filters
