@@ -1,30 +1,30 @@
 <?php
 
-if ( ! function_exists('village_client_area') ) {
+if ( ! function_exists( 'village_client_area' ) ) {
 
 	// Register Custom Post Type
 	function village_client_area() {
 
-		$labels = array(
-			'name'                => _x( 'Client Galleries', 'Post Type General Name', 'village' ),
-			'singular_name'       => _x( 'Client Gallery', 'Post Type Singular Name', 'village' ),
-			'menu_name'           => __( 'Client Area', 'village' ),
-			'parent_item_colon'   => __( 'Parent Gallery:', 'village' ),
-			'all_items'           => __( 'All Galleries', 'village' ),
-			'view_item'           => __( 'View Gallery', 'village' ),
-			'add_new_item'        => __( 'Add Gallery', 'village' ),
-			'add_new'             => __( 'Add New', 'village' ),
-			'edit_item'           => __( 'Edit Gallery', 'village' ),
-			'update_item'         => __( 'Update Gallery', 'village' ),
-			'search_items'        => __( 'Search Galleries', 'village' ),
-			'not_found'           => __( 'Not found', 'village' ),
-			'not_found_in_trash'  => __( 'Not found in Trash', 'village' ),
+		$labels  = array(
+			'name'               => _x( 'Client Galleries', 'Post Type General Name', 'village' ),
+			'singular_name'      => _x( 'Client Gallery', 'Post Type Singular Name', 'village' ),
+			'menu_name'          => __( 'Client Area', 'village' ),
+			'parent_item_colon'  => __( 'Parent Gallery:', 'village' ),
+			'all_items'          => __( 'All Galleries', 'village' ),
+			'view_item'          => __( 'View Gallery', 'village' ),
+			'add_new_item'       => __( 'Add Gallery', 'village' ),
+			'add_new'            => __( 'Add New', 'village' ),
+			'edit_item'          => __( 'Edit Gallery', 'village' ),
+			'update_item'        => __( 'Update Gallery', 'village' ),
+			'search_items'       => __( 'Search Galleries', 'village' ),
+			'not_found'          => __( 'Not found', 'village' ),
+			'not_found_in_trash' => __( 'Not found in Trash', 'village' ),
 		);
 		$rewrite = array(
-			'slug'                => 'client-area',
-			'with_front'          => true,
-			'pages'               => false,
-			'feeds'               => false,
+			'slug'       => 'client-area',
+			'with_front' => true,
+			'pages'      => false,
+			'feeds'      => false,
 		);
 
 		$args = array(
@@ -47,6 +47,8 @@ if ( ! function_exists('village_client_area') ) {
 			'rewrite'             => $rewrite,
 			'capability_type'     => 'page',
 		);
+
+		$args = apply_filters( 'village_client_area/post_type', $args );
 		register_post_type( 'client_gallery', $args );
 
 	}
