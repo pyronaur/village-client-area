@@ -1,5 +1,40 @@
 <?php
 
+/**
+ * Check if post_id belongs to the client-area plugin
+ *
+ * @param int $post_id
+ *
+ * @return bool
+ */
+function is_village_client_area( $post_id = 0 ) {
+
+	$is_client_area = false;
+
+	// If there is no post id, try to get_the_id()
+	if( ! $post_id ) {
+		$post_id        = get_the_ID();
+	}
+	// Try again, if still no ID
+	if ( ! $post_id ) {
+		$post_id = get_queried_object_id();
+	}
+
+	if (
+		// Current post has correct post type
+		'client_gallery' === get_post_type( $post_id )
+
+		// Current page is set to be as the client area page
+		|| ( CA_Option::get( 'client_area_page', false ) > 0 && CA_Option::get( 'client_area_page', 0 ) == $post_id )
+
+		// Is client gallery archive
+		|| is_post_type_archive( 'client_gallery' )
+	) {
+		$is_client_area = true;
+	}
+
+	return apply_filters( 'village_client_area/is_client_area', $is_client_area );
+}
 
 function vca_comments_template() {
 	// If comments are open or we have at least one comment, load up the comment template
@@ -56,8 +91,6 @@ function vca_locate_template( $slug, $name = null ) {
 
 	return $template;
 }
-
-
 
 
 if ( ! function_exists( 'village_is_password_protected' ) ) {
