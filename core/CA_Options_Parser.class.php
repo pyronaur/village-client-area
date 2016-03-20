@@ -4,7 +4,6 @@
 /**
  * @TODO:
  *      * Trim this class to only necessary options
- *      * Rename CA_Options_Parser for future compitability
  *
  */
 if ( ! defined( 'ABSPATH' ) ) {
@@ -45,7 +44,7 @@ if ( ! class_exists( 'CA_Options_Parser' ) ):
 		 *
 		 * @param  (array) $keys Keys from which to generate pretty titles from
 		 *
-		 * @return (array)       Pretty Associative Array
+		 * @return array       Pretty Associative Array
 		 * @uses   TV_Parser::prettify()
 		 */
 		public static function selectify( $keys ) {
@@ -62,7 +61,7 @@ if ( ! class_exists( 'CA_Options_Parser' ) ):
 		 * @param  mixed   $var  Something Ugly
 		 * @param  boolean $flip Only if $var is array - result is flipped.
 		 *
-		 * @return (mixed)        For whatever one sows, that will he also reap
+		 * @return array|mixed|string    For whatever one sows, that will he also reap
 		 */
 		public static function prettify( $var, $flip = false ) {
 
