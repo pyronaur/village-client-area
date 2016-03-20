@@ -1,6 +1,6 @@
 {
   "name": "Client-Area",
-  "version": "1.0.8",
+  "version": "1.1.2",
   "browser": {
     "plugin": "./src/javascript/vendor/jquery-plugin.js"
   },
