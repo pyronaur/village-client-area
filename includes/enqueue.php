@@ -25,7 +25,6 @@ function vca_enqueue_styles_scripts() {
 		'imagesloaded',
 		'masonry',
 		'wp_js_hooks',
-		'jqache',
 		'velocity',
 	) );
 

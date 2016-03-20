@@ -28,9 +28,7 @@ GLOBAL.config =
 	### External Libraries & Their URLs ###
 	external_libs:
 		# Essentials
-		jqache: "https://raw.githubusercontent.com/danwit/jQache/master/src/jqache-0.1.1.js"
 		wp_js_hooks: "https://raw.githubusercontent.com/carldanley/WP-JS-Hooks/master/src/event-manager.js"
-
 
 		# Libraries
 		imagesloaded: "https://raw.githubusercontent.com/desandro/imagesloaded/master/imagesloaded.pkgd.js"

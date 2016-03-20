@@ -13,9 +13,8 @@ js_wrapper = """
 
 	(function() { 
 	 	"use strict";
-		var $, $$, Hooks, App;
+		var $, Hooks, App;
 		$ = jQuery;
-		$$ = $.q;
 		App = {};
 		Hooks = window.wp.hooks;
 	    <%= contents %>
