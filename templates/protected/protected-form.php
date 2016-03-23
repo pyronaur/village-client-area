@@ -2,6 +2,6 @@
 	<span class="pwf__subtitle"><?php esc_html_e('Enter your password to view this gallery', 'village-area'); ?></span>
 	<div class="form-fields">
 		<input name="post_password" id="pasword" type="password" size="20" maxlength="20" />
-		<button class="button" type="submit" name="Submit">Enter</button>
+		<button class="button" type="submit" name="Submit"><?php esc_html_e('Enter','village-area'); ?></button>
 	</div>
 </form>
