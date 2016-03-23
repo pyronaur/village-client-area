@@ -21,10 +21,12 @@
     "gulp-ruby-sass": "^1.0.5",
     "gulp-run": "^1.6.8",
     "gulp-shell": "^0.4.2",
+    "gulp-sort": "^2.0.0",
     "gulp-sourcemaps": "^1.5.2",
     "gulp-uglifyjs": "^0.6.2",
     "gulp-util": "^3.0.5",
     "gulp-watch": "^4.2.4",
+    "gulp-wp-pot": "^1.1.1",
     "gulp-wrap": "*",
     "merge-stream": "^0.1.7"
   }
