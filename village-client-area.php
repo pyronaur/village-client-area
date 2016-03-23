@@ -3,7 +3,7 @@
  * Plugin Name:       Village Client Area
  * Plugin URI:        http://themevillage.net
  * Description:       A client area plugin for Photographers. Requires Plugins: Advanced Custom Fields Pro and Redux Framework
- * Version:           1.1.2
+ * Version:           1.1.3
  * Author:            ThemeVillage
  * Author URI:        http://themevillage.net
  * License:           GPL-3.0+

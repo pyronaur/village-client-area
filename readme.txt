@@ -3,7 +3,7 @@ Contributors: justnorris
 Tags: client-area, photography, customer-area,
 Requires at least: 4.0
 Tested up to: 4.3.1
-Stable tag: 1.1.2
+Stable tag: 1.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,6 +43,10 @@ This section describes how to install the plugin and get it working.
 
 
 == Changelog ==
+= 1.1.3 =
+* Load 'village-area' textdomain
+
+
 = 1.1.2 =
 * Change text-domain from 'village' to 'village-area'
 * Improve i18n functions
@@ -55,18 +59,23 @@ This section describes how to install the plugin and get it working.
 = 1.1.1 =
 * Fix: Selecting/Deselecting AJAX Loaded entries
 
+
 = 1.1.0 =
 * Fix: add Wordpress 4.4 compitability
- 
+
+
 = 1.0.8 =
 * Added WP Filter: 'client.previewPosition'
+
 
 = 1.0.5 =
 * Added WP Hooks: 'client.filters/init' and 'client.filters/destroy'
 
+
 = 1.0.3 =
 * Mintor improvements
 * Updated changelog, readme
+
 
 = 1.0 =
 * Initial Release
