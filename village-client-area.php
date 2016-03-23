@@ -12,7 +12,6 @@
  */
 
 
-
 /**
  * @TODO:
  *
@@ -41,6 +40,12 @@ if ( is_admin() ) {
 		deactivate_plugins( $legacy_vca_plugin );
 	}
 }
+
+function village_client_area_initialize() {
+	load_plugin_textdomain( 'village-client', false, basename( dirname( __FILE__ ) ) );
+}
+
+add_action( 'plugins_loaded', 'village_client_area_initialize' );
 
 
 require_once 'Village_Client_Area.php';
