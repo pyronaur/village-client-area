@@ -3,7 +3,7 @@ GLOBAL.production = true
 GLOBAL.config =
 
 	# General Config
-	url: "http://tal.localbox.in"
+	url: "127.0.0.1"
 	build: "./resources/build"
 
 	mode: 'dev'
