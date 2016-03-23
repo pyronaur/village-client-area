@@ -42,7 +42,7 @@ if ( is_admin() ) {
 }
 
 function village_client_area_initialize() {
-	load_plugin_textdomain( 'village-client', false, basename( dirname( __FILE__ ) ) );
+	load_plugin_textdomain( 'village-area', false, basename( dirname( __FILE__ ) ) );
 }
 
 add_action( 'plugins_loaded', 'village_client_area_initialize' );

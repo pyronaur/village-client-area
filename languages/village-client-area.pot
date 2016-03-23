@@ -1,0 +1,184 @@
+# Copyright (C) 2016 village
+# This file is distributed under the same license as the village package.
+msgid ""
+msgstr ""
+"Project-Id-Version: village\n"
+"Report-Msgid-Bugs-To: http://help.themevillage.net\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: ThemeVillage <help@themevillage.net>\n"
+"Language-Team: ThemeVillage <help@themevillage.net>\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n\n"
+
+#: includes/redux-options.php:66
+msgid "Settings"
+msgstr ""
+
+#: includes/register_post_type.php:9
+msgctxt "Post Type General Name"
+msgid "Client Galleries"
+msgstr ""
+
+#: includes/register_post_type.php:10
+msgctxt "Post Type Singular Name"
+msgid "Client Gallery"
+msgstr ""
+
+#: includes/register_post_type.php:11
+msgid "Client Area"
+msgstr ""
+
+#: includes/register_post_type.php:12
+msgid "Parent Gallery:"
+msgstr ""
+
+#: includes/register_post_type.php:13
+msgid "All Galleries"
+msgstr ""
+
+#: includes/register_post_type.php:14
+msgid "View Gallery"
+msgstr ""
+
+#: includes/register_post_type.php:15
+msgid "Add Gallery"
+msgstr ""
+
+#: includes/register_post_type.php:16
+msgid "Add New"
+msgstr ""
+
+#: includes/register_post_type.php:17
+msgid "Edit Gallery"
+msgstr ""
+
+#: includes/register_post_type.php:18
+msgid "Update Gallery"
+msgstr ""
+
+#: includes/register_post_type.php:19
+msgid "Search Galleries"
+msgstr ""
+
+#: includes/register_post_type.php:20
+msgid "Not found"
+msgstr ""
+
+#: includes/register_post_type.php:21
+msgid "Not found in Trash"
+msgstr ""
+
+#: includes/register_post_type.php:31
+msgid "client_gallery"
+msgstr ""
+
+#: includes/register_post_type.php:32
+msgid "Client Galleries"
+msgstr ""
+
+#: templates/client-comments.php:17
+msgctxt "comment title"
+msgid "%1$s comment"
+msgid_plural "%1$s comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/client-comments.php:23, templates/client-comments.php:41
+msgid "Comment navigation"
+msgstr ""
+
+#: templates/client-comments.php:24, templates/client-comments.php:42
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: templates/client-comments.php:25, templates/client-comments.php:43
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: templates/client-comments.php:54
+msgid "Comments are closed."
+msgstr ""
+
+#: templates/client-comments.php:62
+msgid "Comment"
+msgstr ""
+
+#: templates/client-comments.php:70
+msgid "Name"
+msgstr ""
+
+#: templates/client-comments.php:77
+msgid "Email"
+msgstr ""
+
+#: templates/client-comments.php:83
+msgid "Your Site URL"
+msgstr ""
+
+#: templates/client-comments.php:90
+msgctxt "noun"
+msgid "Comment"
+msgstr ""
+
+#: templates/list/content-search.php:2
+msgid "Quick Search..."
+msgstr ""
+
+#: templates/list/layout-disabled.php:17
+msgid "Private Area!"
+msgstr ""
+
+#: templates/list/layout-disabled.php:20
+msgid "Sorry, but I don't have anything for display in here. Client galleries are private."
+msgstr ""
+
+#: templates/protected/protected-form.php:2
+msgid "Enter your password to view this gallery"
+msgstr ""
+
+#: templates/protected/protected-form.php:5
+msgid "Enter"
+msgstr ""
+
+#: templates/single/content-description.php:22
+msgid "Edit"
+msgstr ""
+
+#: templates/single/gallery-filters.php:3
+msgid "Show All"
+msgstr ""
+
+#: templates/single/gallery-filters.php:4
+msgid "Show Selected"
+msgstr ""
+
+#: templates/single/gallery-filters.php:5
+msgid "Show Unselected"
+msgstr ""
+
+#: templates/single/image-actions.php:5
+msgid "Selected"
+msgstr ""
+
+#: templates/single/image-actions.php:8
+msgid "Not Selected"
+msgstr ""
+
+#: templates/single/image-actions.php:15
+msgid "Unselect"
+msgstr ""
+
+#: templates/single/image-actions.php:18
+msgid "Select"
+msgstr ""
+
+#: Village_Client_Area.php:42, Village_Client_Area.php:50
+msgid "Cheatin&#8217; huh?"
+msgstr ""
