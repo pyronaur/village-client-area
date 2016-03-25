@@ -3,7 +3,7 @@ Contributors: justnorris
 Tags: client-area, photography, customer-area,
 Requires at least: 4.0
 Tested up to: 4.3.1
-Stable tag: 1.1.3
+Stable tag: 1.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,6 +43,9 @@ This section describes how to install the plugin and get it working.
 
 
 == Changelog ==
+= 1.1.4 =
+* Fully functional translatable "village-ca" text-domain. ( Last time I'm changing text-domain related code, promise )
+
 = 1.1.3 =
 * Load 'village-area' textdomain
 
