@@ -91,8 +91,11 @@ if ( function_exists( "register_field_group" ) ) {
 
 }
 
+
+
+
 if ( function_exists( 'acf_add_local_field_group' ) ) {
-	$args = apply_filters( 'village_client_area/acf_settings_featured', $args );
+	$args = apply_filters( 'village_client_area/acf_settings_featured', $client_area_featured );
 
 	if ( ! empty( $args ) ) {
 		acf_add_local_field_group( $args );
