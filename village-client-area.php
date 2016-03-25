@@ -8,7 +8,7 @@
  * Author URI:        http://themevillage.net
  * License:           GPL-3.0+
  * License URI:       http://www.gnu.org/licenses/gpl-3.0.txt
- * Text Domain:       village
+ * Text Domain:       village-ca
  */
 
 
@@ -42,7 +42,12 @@ if ( is_admin() ) {
 }
 
 function village_client_area_initialize() {
-	load_plugin_textdomain( 'village-area', false, basename( dirname( __FILE__ ) ) );
+	$domain = 'village-ca';
+	// The "plugin_locale" filter is also used in load_plugin_textdomain()
+	$locale = apply_filters( 'plugin_locale', get_locale(), $domain );
+
+	load_textdomain( $domain, WP_LANG_DIR . '/village-ca/' . $domain . '-' . $locale . '.mo' );
+	load_plugin_textdomain( $domain, false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 }
 
 add_action( 'plugins_loaded', 'village_client_area_initialize' );

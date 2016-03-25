@@ -6,19 +6,19 @@ if ( ! function_exists( 'village_client_area' ) ) {
 	function village_client_area() {
 
 		$labels  = array(
-			'name'               => _x( 'Client Galleries', 'Post Type General Name', 'village-area' ),
-			'singular_name'      => _x( 'Client Gallery', 'Post Type Singular Name', 'village-area' ),
-			'menu_name'          => esc_html__( 'Client Area', 'village-area' ),
-			'parent_item_colon'  => esc_html__( 'Parent Gallery:', 'village-area' ),
-			'all_items'          => esc_html__( 'All Galleries', 'village-area' ),
-			'view_item'          => esc_html__( 'View Gallery', 'village-area' ),
-			'add_new_item'       => esc_html__( 'Add Gallery', 'village-area' ),
-			'add_new'            => esc_html__( 'Add New', 'village-area' ),
-			'edit_item'          => esc_html__( 'Edit Gallery', 'village-area' ),
-			'update_item'        => esc_html__( 'Update Gallery', 'village-area' ),
-			'search_items'       => esc_html__( 'Search Galleries', 'village-area' ),
-			'not_found'          => esc_html__( 'Not found', 'village-area' ),
-			'not_found_in_trash' => esc_html__( 'Not found in Trash', 'village-area' ),
+			'name'               => _x( 'Client Galleries', 'Post Type General Name', 'village-ca' ),
+			'singular_name'      => _x( 'Client Gallery', 'Post Type Singular Name', 'village-ca' ),
+			'menu_name'          => esc_html__( 'Client Area', 'village-ca' ),
+			'parent_item_colon'  => esc_html__( 'Parent Gallery:', 'village-ca' ),
+			'all_items'          => esc_html__( 'All Galleries', 'village-ca' ),
+			'view_item'          => esc_html__( 'View Gallery', 'village-ca' ),
+			'add_new_item'       => esc_html__( 'Add Gallery', 'village-ca' ),
+			'add_new'            => esc_html__( 'Add New', 'village-ca' ),
+			'edit_item'          => esc_html__( 'Edit Gallery', 'village-ca' ),
+			'update_item'        => esc_html__( 'Update Gallery', 'village-ca' ),
+			'search_items'       => esc_html__( 'Search Galleries', 'village-ca' ),
+			'not_found'          => esc_html__( 'Not found', 'village-ca' ),
+			'not_found_in_trash' => esc_html__( 'Not found in Trash', 'village-ca' ),
 		);
 		$rewrite = array(
 			'slug'       => 'client-area',
@@ -28,8 +28,8 @@ if ( ! function_exists( 'village_client_area' ) ) {
 		);
 
 		$args = array(
-			'label'               => esc_html__( 'client_gallery', 'village-area' ),
-			'description'         => esc_html__( 'Client Galleries', 'village-area' ),
+			'label'               => esc_html__( 'client_gallery', 'village-ca' ),
+			'description'         => esc_html__( 'Client Galleries', 'village-ca' ),
 			'labels'              => $labels,
 			'supports'            => array( 'title', 'editor', 'thumbnail', 'revisions', 'custom-fields' ),
 			'hierarchical'        => false,

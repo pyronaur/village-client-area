@@ -6,10 +6,9 @@ gulp.task "pot", ->
 	gulp.src( '**/*.php' )
 	.pipe( sort() )
 	.pipe( wpPot( {
-
-		domain: 'village-area',
+		package: 'Village Client Area',
+		domain: 'village-ca',
 		destFile: 'village-client-area.pot',
-		package: 'village',
 		bugReport: 'http://help.themevillage.net',
 		lastTranslator: 'ThemeVillage <help@themevillage.net>',
 		team: 'ThemeVillage <help@themevillage.net>',

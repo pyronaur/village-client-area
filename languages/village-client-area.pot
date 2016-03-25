@@ -1,8 +1,8 @@
-# Copyright (C) 2016 village
-# This file is distributed under the same license as the village package.
+# Copyright (C) 2016 Village Client Area
+# This file is distributed under the same license as the Village Client Area package.
 msgid ""
 msgstr ""
-"Project-Id-Version: village\n"
+"Project-Id-Version: Village Client Area\n"
 "Report-Msgid-Bugs-To: http://help.themevillage.net\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,7 +17,43 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n\n"
 
-#: includes/redux-options.php:66
+#: includes/redux-options.php:9
+msgid "General"
+msgstr ""
+
+#: includes/redux-options.php:15
+msgid "Client area archive page"
+msgstr ""
+
+#: includes/redux-options.php:16
+msgid "In which page to list all client galleries ?"
+msgstr ""
+
+#: includes/redux-options.php:25
+msgid "Enable Favorites"
+msgstr ""
+
+#: includes/redux-options.php:26
+msgid "Let your clients pick their favorite images ?"
+msgstr ""
+
+#: includes/redux-options.php:33
+msgid "Enable Comments"
+msgstr ""
+
+#: includes/redux-options.php:34
+msgid "Display comment area ?"
+msgstr ""
+
+#: includes/redux-options.php:41
+msgid "Enable Smart Tags"
+msgstr ""
+
+#: includes/redux-options.php:42
+msgid "Enable hoverable image number tags ?"
+msgstr ""
+
+#: includes/redux-options.php:56
 msgid "Settings"
 msgstr ""
 
@@ -177,8 +213,4 @@ msgstr ""
 
 #: templates/single/image-actions.php:18
 msgid "Select"
-msgstr ""
-
-#: Village_Client_Area.php:42, Village_Client_Area.php:50
-msgid "Cheatin&#8217; huh?"
 msgstr ""
