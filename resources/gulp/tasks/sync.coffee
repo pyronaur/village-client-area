@@ -6,7 +6,7 @@ util = require 'gulp-util'
 
 
 gulp.task "browser-sync", ->
-	sync.init "assets/build/*.css",
+	sync.init "resources/build/*.css",
 		proxy:
 			target: Config.url
 		open: false
@@ -24,6 +24,9 @@ gulp.task "sync", ["browser-sync"], ->
 	watch "**/*.php", ->
 		util.log "[PHP] " + util.colors.yellow("Clear Cache")
 		setTimeout( sync.reload, 200 )
+
+	watch "#{Config.build}/*.js", ->
+		sync.reload()
 
 	watch "#{Config.build}/*.js", ->
 		sync.reload()
