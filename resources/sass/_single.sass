@@ -14,8 +14,8 @@
 
 	&__meta
 		@extend %cf
-		padding: $halfling
-		font-size: 0.875em
+		padding: 1rem
+		font-size: 0.875rem
 		font-weight: 300
 
 		line-height: 1
@@ -30,9 +30,21 @@
 
 		background-color: $light
 
-	&__id
+	.ca-image__id
 		float: left
 		flex: 1
+
+	.ca-image__id--as-tag
+		@extend .ca-preview-link
+
+		// Specificity to override .ca-preview-link
+		&.ca-image__id
+			background-color: darken($light, 5)
+			margin-left: 0
+
+	&__name
+		margin-bottom: $halfling
+		font-weight: bold
 
 	.icon
 		transition: transform 300ms ease-in-out

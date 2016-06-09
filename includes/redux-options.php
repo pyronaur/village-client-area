@@ -43,6 +43,19 @@ $sections[] = array(
 			'type'     => 'switch',
 			'default'  => '1',
 		),
+
+		array(
+			'id'    => "image_name_type",
+			'title' => esc_html__( "Image Name", 'village-ca' ),
+			'subtitle' => 'Show additional image info',
+			'type'     => 'select',
+			'options' => array(
+				'none' => "Disable",
+				'title' => 'Show image title',
+				'filename' => 'Show image filename',
+			),
+			'default'  => 'none',
+		),
 	),
 
 );
