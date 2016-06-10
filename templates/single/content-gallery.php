@@ -107,7 +107,7 @@ $image_name_type = CA_Option::get( 'image_name_type', false );
 						<?php if ( $enable_smart_tags ) : ?>
 							<div class="ca-image__id<?php
 							if ( isset( $image_name ) ) {
-								echo "ca-image__id--as-tag";
+								echo " ca-image__id--as-tag";
 							}
 							?>">#<?php echo $image['id']; ?></div>
 						<?php endif; ?>
