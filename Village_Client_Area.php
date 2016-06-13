@@ -11,7 +11,7 @@ if ( ! class_exists( 'Village_Client_Area' ) ) :
 
 		private static $config;
 
-		public $version = '1.1.1';
+		public $version = '1.1.5';
 
 		protected static $_instance = null;
 
