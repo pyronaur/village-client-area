@@ -9,8 +9,8 @@ gulp.task "pot", ->
 		package: 'Village Client Area',
 		domain: 'village-ca',
 		destFile: 'village-client-area.pot',
-		bugReport: 'http://help.themevillage.net',
-		lastTranslator: 'ThemeVillage <help@themevillage.net>',
-		team: 'ThemeVillage <help@themevillage.net>',
+		bugReport: 'http://help.colormelon.com',
+		lastTranslator: 'Colormelon <help@colormelon.com>',
+		team: 'Colormelon <help@colormelon.com>',
 	} ) )
 	.pipe( gulp.dest( 'languages' ) )

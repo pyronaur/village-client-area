@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name:       Village Client Area
- * Plugin URI:        http://themevillage.net
+ * Plugin URI:        http://colormelon.com
  * Description:       A client area plugin for Photographers. Requires Plugins: Advanced Custom Fields Pro and Redux Framework
  * Version:           1.1.5
- * Author:            ThemeVillage
- * Author URI:        http://themevillage.net
+ * Author:            Colormelon
+ * Author URI:        http://colormelon.com
  * License:           GPL-3.0+
  * License URI:       http://www.gnu.org/licenses/gpl-3.0.txt
  * Text Domain:       village-ca
@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 /**
- * Deactivate client area post type plugin that was bundled with older ThemeVillage themes.
+ * Deactivate client area post type plugin that was bundled with older Colormelon themes.
  * @since 1.0.0
  * @TODO  :
  *  + remove at v1.2.0

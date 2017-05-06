@@ -81,7 +81,7 @@ $args['share_icons'][] = array(
 	'icon'  => 'el-icon-twitter'
 );
 $args['share_icons'][] = array(
-	'url'   => 'http://www.facebook.com/themevillage.net',
+	'url'   => 'http://www.facebook.com/colormelon.com',
 	'title' => 'Like us on Facebook',
 	'icon'  => 'el-icon-facebook'
 );
